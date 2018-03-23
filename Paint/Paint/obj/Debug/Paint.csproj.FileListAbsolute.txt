@@ -1,0 +1,10 @@
+D:\LTTWD\Paint\Paint\bin\Debug\Paint.exe.config
+D:\LTTWD\Paint\Paint\bin\Debug\Paint.exe
+D:\LTTWD\Paint\Paint\bin\Debug\Paint.pdb
+D:\LTTWD\Paint\Paint\obj\Debug\Paint.csprojResolveAssemblyReference.cache
+D:\LTTWD\Paint\Paint\obj\Debug\Paint.Form1.resources
+D:\LTTWD\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\LTTWD\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\LTTWD\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\LTTWD\Paint\Paint\obj\Debug\Paint.exe
+D:\LTTWD\Paint\Paint\obj\Debug\Paint.pdb

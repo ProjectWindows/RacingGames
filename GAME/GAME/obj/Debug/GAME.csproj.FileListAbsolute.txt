@@ -1,0 +1,11 @@
+D:\LTTWD\GAME\GAME\bin\Debug\GAME.exe.config
+D:\LTTWD\GAME\GAME\bin\Debug\GAME.exe
+D:\LTTWD\GAME\GAME\bin\Debug\GAME.pdb
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.csprojResolveAssemblyReference.cache
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.Form1.resources
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.Properties.Resources.resources
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.csproj.GenerateResource.cache
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.csproj.CoreCompileInputs.cache
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.exe
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.pdb
+D:\LTTWD\GAME\GAME\obj\Debug\GAME.Play.resources
