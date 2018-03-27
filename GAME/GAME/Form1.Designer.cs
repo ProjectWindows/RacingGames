@@ -1,4 +1,4 @@
-﻿namespace GAME
+﻿namespace Game
 {
     partial class Form1
     {
@@ -28,68 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.explosion = new System.Windows.Forms.PictureBox();
+            this.player = new System.Windows.Forms.PictureBox();
+            this.trophy = new System.Windows.Forms.PictureBox();
+            this.Al2 = new System.Windows.Forms.PictureBox();
+            this.Al1 = new System.Windows.Forms.PictureBox();
+            this.roadTrack2 = new System.Windows.Forms.PictureBox();
+            this.roadTrack1 = new System.Windows.Forms.PictureBox();
+            this.btStart = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.distance = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trophy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Al2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Al1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnPlay
+            // panel1
             // 
-            this.btnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnPlay.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPlay.Location = new System.Drawing.Point(393, 178);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(102, 47);
-            this.btnPlay.TabIndex = 0;
-            this.btnPlay.Text = "PLAY";
-            this.btnPlay.UseVisualStyleBackColor = false;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.explosion);
+            this.panel1.Controls.Add(this.player);
+            this.panel1.Controls.Add(this.trophy);
+            this.panel1.Controls.Add(this.Al2);
+            this.panel1.Controls.Add(this.Al1);
+            this.panel1.Controls.Add(this.roadTrack2);
+            this.panel1.Controls.Add(this.roadTrack1);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(380, 424);
+            this.panel1.TabIndex = 0;
             // 
-            // btnExit
+            // explosion
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(393, 249);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(102, 47);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.Text = "EXIT";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.explosion.BackColor = System.Drawing.Color.Transparent;
+            this.explosion.Image = global::Game.Properties.Resources.explosion;
+            this.explosion.Location = new System.Drawing.Point(153, 234);
+            this.explosion.Name = "explosion";
+            this.explosion.Size = new System.Drawing.Size(64, 64);
+            this.explosion.TabIndex = 6;
+            this.explosion.TabStop = false;
+            // 
+            // player
+            // 
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = global::Game.Properties.Resources.carYellow;
+            this.player.Location = new System.Drawing.Point(161, 286);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(50, 101);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player.TabIndex = 5;
+            this.player.TabStop = false;
+            // 
+            // trophy
+            // 
+            this.trophy.BackColor = System.Drawing.Color.Transparent;
+            this.trophy.Image = global::Game.Properties.Resources.bronze;
+            this.trophy.Location = new System.Drawing.Point(66, 157);
+            this.trophy.Name = "trophy";
+            this.trophy.Size = new System.Drawing.Size(250, 100);
+            this.trophy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.trophy.TabIndex = 4;
+            this.trophy.TabStop = false;
+            // 
+            // Al2
+            // 
+            this.Al2.BackColor = System.Drawing.Color.Transparent;
+            this.Al2.Image = global::Game.Properties.Resources.carGreen;
+            this.Al2.Location = new System.Drawing.Point(294, 85);
+            this.Al2.Name = "Al2";
+            this.Al2.Size = new System.Drawing.Size(50, 101);
+            this.Al2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Al2.TabIndex = 3;
+            this.Al2.TabStop = false;
+            // 
+            // Al1
+            // 
+            this.Al1.BackColor = System.Drawing.Color.Transparent;
+            this.Al1.Image = global::Game.Properties.Resources.carGrey;
+            this.Al1.Location = new System.Drawing.Point(66, 19);
+            this.Al1.Name = "Al1";
+            this.Al1.Size = new System.Drawing.Size(50, 101);
+            this.Al1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Al1.TabIndex = 2;
+            this.Al1.TabStop = false;
+            // 
+            // roadTrack2
+            // 
+            this.roadTrack2.Image = global::Game.Properties.Resources.roadTrack;
+            this.roadTrack2.Location = new System.Drawing.Point(-3, -222);
+            this.roadTrack2.Name = "roadTrack2";
+            this.roadTrack2.Size = new System.Drawing.Size(385, 632);
+            this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roadTrack2.TabIndex = 1;
+            this.roadTrack2.TabStop = false;
+            // 
+            // roadTrack1
+            // 
+            this.roadTrack1.Image = global::Game.Properties.Resources.roadTrack;
+            this.roadTrack1.Location = new System.Drawing.Point(-2, -638);
+            this.roadTrack1.Name = "roadTrack1";
+            this.roadTrack1.Size = new System.Drawing.Size(385, 632);
+            this.roadTrack1.TabIndex = 0;
+            this.roadTrack1.TabStop = false;
+            // 
+            // btStart
+            // 
+            this.btStart.Location = new System.Drawing.Point(150, 476);
+            this.btStart.Name = "btStart";
+            this.btStart.Size = new System.Drawing.Size(101, 36);
+            this.btStart.TabIndex = 1;
+            this.btStart.Text = "Start";
+            this.btStart.UseVisualStyleBackColor = true;
+            this.btStart.Click += new System.EventHandler(this.btStart_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(203, 30);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(131, 439);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(545, 75);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "RACING GAMES";
+            this.label1.Size = new System.Drawing.Size(111, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Distance:";
+            // 
+            // distance
+            // 
+            this.distance.AutoSize = true;
+            this.distance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.distance.Location = new System.Drawing.Point(248, 439);
+            this.distance.Name = "distance";
+            this.distance.Size = new System.Drawing.Size(38, 25);
+            this.distance.TabIndex = 3;
+            this.distance.Text = "00";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(809, 462);
+            this.ClientSize = new System.Drawing.Size(411, 524);
+            this.Controls.Add(this.distance);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnPlay);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Controls.Add(this.btStart);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.Text = "RACING GAME";
+            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.movecar);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.stopcar);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trophy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Al2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Al1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,9 +204,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox roadTrack2;
+        private System.Windows.Forms.PictureBox roadTrack1;
+        private System.Windows.Forms.Button btStart;
+        private System.Windows.Forms.PictureBox explosion;
+        private System.Windows.Forms.PictureBox player;
+        private System.Windows.Forms.PictureBox trophy;
+        private System.Windows.Forms.PictureBox Al2;
+        private System.Windows.Forms.PictureBox Al1;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label distance;
     }
 }
 
