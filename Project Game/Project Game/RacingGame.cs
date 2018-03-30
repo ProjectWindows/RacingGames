@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 
 namespace Project_Game
 {
     public partial class RacingGame : Form
     {
+        SoundPlayer play = new SoundPlayer(@"gioithieu.wav");
+
         public RacingGame()
         {
             InitializeComponent();
-            
+          //  play.PlayLooping();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
@@ -35,6 +38,9 @@ namespace Project_Game
             }
         }
 
-        
+        private void RacingGame_Load(object sender, EventArgs e)
+        {
+            play.Play();
+        }
     }
 }

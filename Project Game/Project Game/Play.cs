@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Project_Game
 {
     public partial class Play : Form
     {
+        SoundPlayer p = new SoundPlayer(@"playgame.wav");
+        SoundPlayer PlaySound = new SoundPlayer(@"hit.wav");
+        RacingGame r = new RacingGame();
+     //   Play l = new Play();
+
         // biến toàn cục
-        int TDXe = 5;
+        int TDXe = 6;
         int TDDuong = 5;
         bool Trai;
         bool Phai;
@@ -34,9 +40,11 @@ namespace Project_Game
         {
             InitializeComponent();
             Reset();
+           
         }
         private void Reset()
         {
+            p.PlayLooping();
             pcbChienThang.Visible = false; // ẩn bảng chiến thắng
             btnStart.Enabled = false; // vô hiệu nút start khi xe chạy
             pcbNo.Visible = false; // ẩn Hình Nổ
@@ -281,17 +289,18 @@ namespace Project_Game
                 pcbChienThang.Image = Properties.Resources.bronze;
             }
             // nếu score > 2000 --> A silver
-            if (Diem > 2000)
+            if (Diem > 1000)
             {
                 pcbChienThang.Image = Properties.Resources.silver;
             }
             // nếu score > 3500 --> A golden
-            if (Diem > 3500)
+            if (Diem > 2000)
             {
                 pcbChienThang.Image = Properties.Resources.gold;
             }
 
-            PlaySound();
+            //PlaySound();
+            PlaySound.Play();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -344,14 +353,17 @@ namespace Project_Game
             DialogResult d = MessageBox.Show("Bạn thực sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (d == DialogResult.Yes)
             {
-                this.Close();
-                RacingGame r = new RacingGame();
+                this.Close();               
+                PlaySound.Stop();
+                timer1.Stop();
+                timer2.Stop();
                 r.Show();
             }
         }
 
         private void Play_Load(object sender, EventArgs e)
         {
+           
             lbHuongDan.Text = "Di chuyển xe của bạn tránh \n" +
                 "những chiếc khác,xe chạy càng lâu điểm\n" +
                 "càng tăng cao tốc độ cũng tăng dần\n" +
@@ -369,11 +381,11 @@ namespace Project_Game
         }
 
 
-        private void PlaySound()
+       /* private void PlaySound()
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
             player.Play();
-        }
+        }*/
 
         
     }
