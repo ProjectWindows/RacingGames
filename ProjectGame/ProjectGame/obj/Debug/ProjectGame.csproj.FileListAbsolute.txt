@@ -1,0 +1,10 @@
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\bin\Debug\ProjectGame.exe.config
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\bin\Debug\ProjectGame.exe
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\bin\Debug\ProjectGame.pdb
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\obj\Debug\ProjectGame.csprojResolveAssemblyReference.cache
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\obj\Debug\ProjectGame.Properties.Resources.resources
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\obj\Debug\ProjectGame.csproj.GenerateResource.cache
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\obj\Debug\ProjectGame.csproj.CoreCompileInputs.cache
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\obj\Debug\ProjectGame.exe
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\obj\Debug\ProjectGame.pdb
+D:\LTTWD\Game Main\ProjectGame\ProjectGame\obj\Debug\ProjectGame.Play.resources
