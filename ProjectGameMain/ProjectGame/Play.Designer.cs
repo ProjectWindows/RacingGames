@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Play));
             this.plNen = new System.Windows.Forms.Panel();
+            this.pcbXe1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcbPlayer = new System.Windows.Forms.PictureBox();
+            this.pcbDuong1 = new System.Windows.Forms.PictureBox();
+            this.pcbDuong2 = new System.Windows.Forms.PictureBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbDiem = new System.Windows.Forms.Label();
@@ -41,17 +46,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbTocDo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pcbXe1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pcbPlayer = new System.Windows.Forms.PictureBox();
-            this.pcbDuong1 = new System.Windows.Forms.PictureBox();
-            this.pcbDuong2 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pcbImage = new System.Windows.Forms.PictureBox();
+            this.btChon = new System.Windows.Forms.Button();
             this.plNen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbXe1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // plNen
@@ -67,6 +71,57 @@
             this.plNen.Name = "plNen";
             this.plNen.Size = new System.Drawing.Size(561, 627);
             this.plNen.TabIndex = 0;
+            // 
+            // pcbXe1
+            // 
+            this.pcbXe1.Image = global::ProjectGame.Properties.Resources.Police;
+            this.pcbXe1.Location = new System.Drawing.Point(79, 33);
+            this.pcbXe1.Name = "pcbXe1";
+            this.pcbXe1.Size = new System.Drawing.Size(50, 100);
+            this.pcbXe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbXe1.TabIndex = 3;
+            this.pcbXe1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(340, 295);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(58, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pcbPlayer
+            // 
+            this.pcbPlayer.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pcbPlayer.Image = global::ProjectGame.Properties.Resources.carOrange;
+            this.pcbPlayer.Location = new System.Drawing.Point(249, 494);
+            this.pcbPlayer.Name = "pcbPlayer";
+            this.pcbPlayer.Size = new System.Drawing.Size(50, 100);
+            this.pcbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPlayer.TabIndex = 1;
+            this.pcbPlayer.TabStop = false;
+            // 
+            // pcbDuong1
+            // 
+            this.pcbDuong1.Image = global::ProjectGame.Properties.Resources.Road;
+            this.pcbDuong1.Location = new System.Drawing.Point(-3, -808);
+            this.pcbDuong1.Name = "pcbDuong1";
+            this.pcbDuong1.Size = new System.Drawing.Size(562, 800);
+            this.pcbDuong1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbDuong1.TabIndex = 0;
+            this.pcbDuong1.TabStop = false;
+            // 
+            // pcbDuong2
+            // 
+            this.pcbDuong2.Image = global::ProjectGame.Properties.Resources.Road;
+            this.pcbDuong2.Location = new System.Drawing.Point(-3, -142);
+            this.pcbDuong2.Name = "pcbDuong2";
+            this.pcbDuong2.Size = new System.Drawing.Size(562, 800);
+            this.pcbDuong2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbDuong2.TabIndex = 0;
+            this.pcbDuong2.TabStop = false;
             // 
             // btnStart
             // 
@@ -121,6 +176,7 @@
             this.pgbTocDo.Name = "pgbTocDo";
             this.pgbTocDo.Size = new System.Drawing.Size(100, 23);
             this.pgbTocDo.TabIndex = 5;
+            this.pgbTocDo.Click += new System.EventHandler(this.pgbTocDo_Click);
             // 
             // chay
             // 
@@ -159,62 +215,43 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "km/h";
             // 
-            // pcbXe1
+            // comboBox1
             // 
-            this.pcbXe1.Image = global::ProjectGame.Properties.Resources.Police;
-            this.pcbXe1.Location = new System.Drawing.Point(79, 33);
-            this.pcbXe1.Name = "pcbXe1";
-            this.pcbXe1.Size = new System.Drawing.Size(50, 100);
-            this.pcbXe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbXe1.TabIndex = 3;
-            this.pcbXe1.TabStop = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(606, 32);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
-            // pictureBox1
+            // pcbImage
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(340, 295);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pcbImage.Location = new System.Drawing.Point(738, 32);
+            this.pcbImage.Name = "pcbImage";
+            this.pcbImage.Size = new System.Drawing.Size(49, 100);
+            this.pcbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbImage.TabIndex = 7;
+            this.pcbImage.TabStop = false;
             // 
-            // pcbPlayer
+            // btChon
             // 
-            this.pcbPlayer.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pcbPlayer.Image = global::ProjectGame.Properties.Resources.carOrange;
-            this.pcbPlayer.Location = new System.Drawing.Point(249, 494);
-            this.pcbPlayer.Name = "pcbPlayer";
-            this.pcbPlayer.Size = new System.Drawing.Size(50, 100);
-            this.pcbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbPlayer.TabIndex = 1;
-            this.pcbPlayer.TabStop = false;
-            // 
-            // pcbDuong1
-            // 
-            this.pcbDuong1.Image = global::ProjectGame.Properties.Resources.Road;
-            this.pcbDuong1.Location = new System.Drawing.Point(-3, -808);
-            this.pcbDuong1.Name = "pcbDuong1";
-            this.pcbDuong1.Size = new System.Drawing.Size(562, 800);
-            this.pcbDuong1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbDuong1.TabIndex = 0;
-            this.pcbDuong1.TabStop = false;
-            // 
-            // pcbDuong2
-            // 
-            this.pcbDuong2.Image = global::ProjectGame.Properties.Resources.Road;
-            this.pcbDuong2.Location = new System.Drawing.Point(-3, -142);
-            this.pcbDuong2.Name = "pcbDuong2";
-            this.pcbDuong2.Size = new System.Drawing.Size(562, 800);
-            this.pcbDuong2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbDuong2.TabIndex = 0;
-            this.pcbDuong2.TabStop = false;
+            this.btChon.Location = new System.Drawing.Point(738, 204);
+            this.btChon.Name = "btChon";
+            this.btChon.Size = new System.Drawing.Size(75, 23);
+            this.btChon.TabIndex = 8;
+            this.btChon.Text = "Chon";
+            this.btChon.UseVisualStyleBackColor = true;
+            this.btChon.Click += new System.EventHandler(this.btChon_Click);
             // 
             // Play
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 655);
+            this.Controls.Add(this.btChon);
+            this.Controls.Add(this.pcbImage);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lbTocDo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -233,6 +270,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +294,9 @@
         private System.Windows.Forms.Label lbTocDo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pcbXe1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pcbImage;
+        private System.Windows.Forms.Button btChon;
     }
 }
 

@@ -88,5 +88,38 @@
   <ItemGroup>
     <None Include="Resources\Police.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carPink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckWhite.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
