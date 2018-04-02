@@ -121,5 +121,20 @@
   <ItemGroup>
     <None Include="Resources\TruckWhite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GhostDriver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KingOfRoad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YoungDriver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caution.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

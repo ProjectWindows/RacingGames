@@ -163,6 +163,36 @@ namespace ProjectGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Caution {
+            get {
+                object obj = ResourceManager.GetObject("Caution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GhostDriver {
+            get {
+                object obj = ResourceManager.GetObject("GhostDriver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap KingOfRoad {
+            get {
+                object obj = ResourceManager.GetObject("KingOfRoad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Police {
             get {
                 object obj = ResourceManager.GetObject("Police", resourceCulture);
@@ -183,6 +213,16 @@ namespace ProjectGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Spark {
+            get {
+                object obj = ResourceManager.GetObject("Spark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TruckBlue {
             get {
                 object obj = ResourceManager.GetObject("TruckBlue", resourceCulture);
@@ -196,6 +236,16 @@ namespace ProjectGame.Properties {
         internal static System.Drawing.Bitmap TruckWhite {
             get {
                 object obj = ResourceManager.GetObject("TruckWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YoungDriver {
+            get {
+                object obj = ResourceManager.GetObject("YoungDriver", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

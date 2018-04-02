@@ -118,46 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Road" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Road.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Police" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Police.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ambulance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CarBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CarBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CarBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CarBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carPink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CarRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CarWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CarWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="carYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TruckBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TruckBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CarBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TruckWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TruckWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YoungDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YoungDriver.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GhostDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GhostDriver.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Road" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Road.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spark.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ambulance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ambulance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carPink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KingOfRoad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KingOfRoad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Police" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Police.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caution.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

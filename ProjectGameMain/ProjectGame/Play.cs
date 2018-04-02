@@ -11,7 +11,7 @@ using System.Media;
 
 namespace ProjectGame
 {
-    public partial class Play : Form
+    public partial class pcbXe3 : Form
     {
      
         SoundPlayer p = new SoundPlayer(@"playgame.wav");
@@ -30,28 +30,31 @@ namespace ProjectGame
         bool Tang;
         int TangToc = 20;
         int VanToc = 0;
-        
+        int Impossible = 0;
         Random rd = new Random();
         
         
-        public Play()
+        public pcbXe3()
         {
             InitializeComponent();
             Reset();
             pgbTocDo.Maximum = 10;
-            LoadImageName();
+            //LoadImageName();
         }
 
         void Reset()
         {
           
             p.PlayLooping();
-             
+            pcbPower.Visible = false; //ẩn hình power
+            pcbEndGame.Visible = false; // ẩn bảng chiến thắng 
             btnStart.Enabled = false; // vô hiệu nút start khi xe chạy
+            pcbNo.Visible = false; // ẩn Hình Nổ
             VanToc = 0;
             TocDoDC = 5; // lấy giá trị mặc định của TocDo=5.
             TDDuong = 5; // lấy giá trị mặc định của TDDuong=5.
             Diem = 0; // đặt Điểm lại 0
+            Impossible = 0;
 
             pcbPlayer.Left = 249; // đặt lại vị trí đầu
             pcbPlayer.Top = 494; // đặt lại vị trí đầu
@@ -155,10 +158,67 @@ namespace ProjectGame
             {
                 Tang = false;
             }
-           
+
             // kết thúc kiểm tra
 
+            // di chuyển xe xuống
+            pcbXe1.Top += TocDoDC;
+            pcbXe2.Top += TocDoDC;
+            pcbXeDien.Top += TocDoDC;
 
+
+            // cho xe xuất hiện ngẫu nhiên
+            if (pcbXe1.Top > plNen.Height)
+            {
+                ChangeXe1(); // chọn xe ngẫu nhiên làm vật cản
+                pcbXe1.Left = rd.Next(2, 249); //random số bên trái
+                pcbXe1.Top = rd.Next(100, 200) * -1; // radom số bên phải
+            }
+            if (pcbXe2.Top > plNen.Height)
+            {
+                ChangeXe2();
+                pcbXe2.Left = rd.Next(265, 540);
+                pcbXe2.Top = rd.Next(100, 200) * -1;
+            }
+            //xuat hien ngau nhien chuong ngai vat
+            if (pcbXeDien.Top > plNen.Height)
+            {
+                ChangeXeDien();
+                pcbXeDien.Left = rd.Next(2, 540);
+                pcbXeDien.Top = rd.Next(200, 250) * -1;
+            }
+            // kết thúc cho xe xuất hiện ngẫu nhiên
+            // nếu palyer đụng xe 1 or xe 2
+            if (pcbPlayer.Bounds.IntersectsWith(pcbXe1.Bounds) || pcbPlayer.Bounds.IntersectsWith(pcbXe2.Bounds))
+            {
+                GameOver(); // kết thúc game khi đụng phải xe 1 or xe 2
+
+            }
+            // tăng tốc dường băng
+            //nếu điểm trên 100 và bé hơn 500
+            if (Diem > 100 && Diem < 500)
+            {
+                TocDoDC = 9;
+                TDDuong = 10;
+            }
+            // nếu điểm trên 500 và bé hơn 1000
+            else
+            {
+                if (Diem > 500 && Diem < 1000)
+                {
+                    TocDoDC = 12;
+                    TDDuong = 13;
+                }
+                // nếu điểm bé hơn 1200
+                else
+                {
+                    if (Diem > 1200)
+                    {
+                        TocDoDC = 15;
+                        TDDuong = 16;
+                    }
+                }
+            }
 
         }
 
@@ -202,7 +262,62 @@ namespace ProjectGame
            if(e.KeyCode==Keys.S && pgbTocDo.Value==10)
             {
                 Tang = true;
+                pcbPower.Visible = true;
+                pcbPlayer.Controls.Add(pcbPower); 
+                pcbPower.Location = new Point(-8, 7);
+                pcbPower.BackColor = Color.Transparent; 
+                pcbPower.BringToFront();
             }
+           if(e.KeyCode == Keys.F1)
+            {
+                pcbPlayer.Image = Properties.Resources.carOrange;
+            }
+            if (e.KeyCode == Keys.F2)
+            {
+                pcbPlayer.Image = Properties.Resources.carGreen;
+            }
+            if (e.KeyCode == Keys.F3)
+            {
+                pcbPlayer.Image = Properties.Resources.carGrey;
+            }
+            if (e.KeyCode == Keys.F4)
+            {
+                pcbPlayer.Image = Properties.Resources.CarRed;
+            }
+            if (e.KeyCode == Keys.F5)
+            {
+                pcbPlayer.Image = Properties.Resources.carYellow;
+            }
+            if (e.KeyCode == Keys.F6)
+            {
+                pcbPlayer.Image = Properties.Resources.carPink;
+            }
+            if (e.KeyCode == Keys.F7)
+            {
+                pcbPlayer.Image = Properties.Resources.TruckBlue;
+            }
+            if (e.KeyCode == Keys.F8)
+            {
+                pcbPlayer.Image = Properties.Resources.TruckWhite;
+            }
+            if (e.KeyCode == Keys.F9)
+            {
+                pcbPlayer.Image = Properties.Resources.Police;
+            }
+            if (e.KeyCode == Keys.F10)
+            {
+                pcbPlayer.Image = Properties.Resources.CarBlue;
+            }
+            if (e.KeyCode == Keys.F11)
+            {
+                pcbPlayer.Image = Properties.Resources.CarWhite;
+            }
+            if (e.KeyCode == Keys.F12)
+            {
+                pcbPlayer.Image = Properties.Resources.CarBlack;
+            }
+            
+
         }
 
         private void Play_KeyUp(object sender, KeyEventArgs e)
@@ -242,80 +357,151 @@ namespace ProjectGame
 
         }
 
-        void LoadImageName()
-        {
-            List<string> ListImage = new List<string>() { "carGreen", "carGrey", "ambulance","CarBlack","CarBlue","carOrange","carPink","CarRed","CarWhite","carYellow","Police","TruckBlue","TruckWhite"};
-            comboBox1.DataSource = ListImage;
-        }
-
-        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
-        {
-            ComboBox cb = sender as ComboBox;
-            if(cb.SelectedValue != null)
-            {
-                Bitmap bm = new Bitmap(Application.StartupPath + "\\Resources\\" + cb.SelectedValue.ToString() + ".png");
-                pcbImage.Image = bm;
-            }
-        }
-
-        private void btChon_Click(object sender, EventArgs e)
-        {
-            string NameCar = comboBox1.SelectedValue.ToString();
-            if(NameCar == "carGreen")
-            {
-                pcbPlayer.Image = Properties.Resources.carGreen;
-            }
-            if (NameCar == "carGrey")
-            {
-                pcbPlayer.Image = Properties.Resources.carGrey;
-            }
-            if (NameCar == "ambulance")
-            {
-                pcbPlayer.Image = Properties.Resources.ambulance;
-            }
-            if (NameCar == "CarBlack")
-            {
-                pcbPlayer.Image = Properties.Resources.CarBlack;
-            }
-            if (NameCar == "CarBlue")
-            {
-                pcbPlayer.Image = Properties.Resources.CarBlue;
-            }
-            if (NameCar == "carOrange")
-            {
-                pcbPlayer.Image = Properties.Resources.carOrange;
-            }
-            if (NameCar == "carPink")
-            {
-                pcbPlayer.Image = Properties.Resources.carPink;
-            }
-            if (NameCar == "CarRed")
-            {
-                pcbPlayer.Image = Properties.Resources.CarRed;
-            }
-            if (NameCar == "CarWhite")
-            {
-                pcbPlayer.Image = Properties.Resources.CarWhite;
-            }
-            if (NameCar == "carYellow")
-            {
-                pcbPlayer.Image = Properties.Resources.carYellow;
-            }
-            if (NameCar == "Police")
-            {
-                pcbPlayer.Image = Properties.Resources.Police;
-            }
-            if (NameCar == "TruckBlue")
-            {
-                pcbPlayer.Image = Properties.Resources.TruckBlue; 
-            }
-            if (NameCar == "TruckWhite")
-            {
-                pcbPlayer.Image = Properties.Resources.TruckWhite;
-            }
-
-        }
         
+
+        private void ChangeXe2()
+        {
+            int num = rd.Next(1, 8); // thiết lập một biến vị trí có số được tạo ra từ 1 tới 8
+            // switch sẽ kiểm tra số được tạo ra  và sẽ hiện thị hình theo yêu cầu
+            switch (num)
+            {
+                //  nếu số tạo ra là 1 thì hiển thị GreenCar
+                case 1:
+                    pcbXe2.Image = Properties.Resources.carGreen; break;
+                //   nếu số tạo ra là 2 thì hiển thị GreyCar
+                case 2:
+                    pcbXe2.Image = Properties.Resources.carGrey; break;
+                // nếu số tạo ra là 3 thì hiển thị oragneCar
+                case 3:
+                    pcbXe2.Image = Properties.Resources.carOrange; break;
+                // nếu số tao ra là 4 thì hiễn thị PinkCar
+                case 4:
+                    pcbXe2.Image = Properties.Resources.carPink; break;
+                // nếu số tạo ra là 5 thì hiển thị Red Car
+                case 5:
+                    pcbXe2.Image = Properties.Resources.CarRed; break;
+                // nếu số tạo ra là 6 thì hiển thị blue truck
+                case 6:
+                    pcbXe2.Image = Properties.Resources.TruckBlue; break;
+                // nếu số tạo ra là 7 thì hiển thị white truck
+                case 7:
+                    pcbXe2.Image = Properties.Resources.TruckWhite; break;
+                // nếu số tạo ra là 8 thì hiển thị Ambulance
+                case 8:
+                    pcbXe2.Image = Properties.Resources.ambulance; break;
+                default: break;
+
+            }
+        }
+
+        private void ChangeXe1()
+        {
+            int num = rd.Next(1, 8); // thiết lập một biến vị trí có số được tạo ra từ 1 tới 8
+            // switch sẽ kiểm tra số được tạo ra  và sẽ hiện thị hình theo yêu cầu
+            switch (num)
+            {
+                //  nếu số tạo ra là 1 thì hiển thị GreenCar
+                case 1:
+                    pcbXe1.Image = Properties.Resources.carGreen; break;
+                //   nếu số tạo ra là 2 thì hiển thị GreyCar
+                case 2:
+                    pcbXe1.Image = Properties.Resources.carGrey; break;
+                // nếu số tạo ra là 3 thì hiển thị oragneCar
+                case 3:
+                    pcbXe1.Image = Properties.Resources.carOrange; break;
+                // nếu số tao ra là 4 thì hiễn thị PinkCar
+                case 4:
+                    pcbXe1.Image = Properties.Resources.carPink; break;
+                // nếu số tạo ra là 5 thì hiển thị Red Car
+                case 5:
+                    pcbXe1.Image = Properties.Resources.CarRed; break;
+                // nếu số tạo ra là 6 thì hiển thị blue truck
+                case 6:
+                    pcbXe1.Image = Properties.Resources.TruckBlue; break;
+                // nếu số tạo ra là 7 thì hiển thị white truck
+                case 7:
+                    pcbXe1.Image = Properties.Resources.TruckWhite; break;
+                // nếu số tạo ra là 8 thì hiển thị Ambulance
+                case 8:
+                    pcbXe1.Image = Properties.Resources.ambulance; break;
+                default: break;
+            }
+        }
+        private void ChangeXeDien()
+        {
+            int num = rd.Next(1, 8); // thiết lập một biến vị trí có số được tạo ra từ 1 tới 8
+            // switch sẽ kiểm tra số được tạo ra  và sẽ hiện thị hình theo yêu cầu
+            switch (num)
+            {
+                //  nếu số tạo ra là 1 thì hiển thị GreenCar
+                case 1:
+                    pcbXeDien.Image = Properties.Resources.carGreen; break;
+                //   nếu số tạo ra là 2 thì hiển thị GreyCar
+                case 2:
+                    pcbXeDien.Image = Properties.Resources.carGrey; break;
+                // nếu số tạo ra là 3 thì hiển thị oragneCar
+                case 3:
+                    pcbXeDien.Image = Properties.Resources.carOrange; break;
+                // nếu số tao ra là 4 thì hiễn thị PinkCar
+                case 4:
+                    pcbXeDien.Image = Properties.Resources.carPink; break;
+                // nếu số tạo ra là 5 thì hiển thị Red Car
+                case 5:
+                    pcbXeDien.Image = Properties.Resources.CarRed; break;
+                // nếu số tạo ra là 6 thì hiển thị blue truck
+                case 6:
+                    pcbXeDien.Image = Properties.Resources.TruckBlue; break;
+                // nếu số tạo ra là 7 thì hiển thị white truck
+                case 7:
+                    pcbXeDien.Image = Properties.Resources.TruckWhite; break;
+                // nếu số tạo ra là 8 thì hiển thị Ambulance
+                case 8:
+                    pcbXeDien.Image = Properties.Resources.ambulance; break;
+                default: break;
+            }
+        }
+        public void GameOver()
+        {
+            pcbEndGame.Visible = true; // hiển thị  bảng chiến thắng
+            timer1.Stop(); // dừng timer
+            btnStart.Enabled = true; // bật button lúc sử dụng
+
+            // hiển thị Nổ ở phía trên xe Player
+            pcbNo.Visible = true; // hiển thị Hình Ảnh Nổ
+            pcbPlayer.Controls.Add(pcbNo); // thêm HA Nổ trên xe player
+            pcbNo.Location = new Point(-8, 5);
+            pcbNo.BackColor = Color.Transparent; // đổi màu 
+            pcbNo.BringToFront(); // đem ra trước xe player
+
+            // nếu score < 1000 --> Young Driver
+            if (Diem < 1000)
+            {
+                pcbEndGame.Image = Properties.Resources.YoungDriver;
+            }
+            // nếu score > 1000 --> Ghost Driver
+            if (Diem > 1000)
+            {
+                pcbEndGame.Image = Properties.Resources.GhostDriver;
+            }
+            // nếu score > 2000 --> King Of Road
+            if (Diem > 2000)
+            {
+                pcbEndGame.Image = Properties.Resources.KingOfRoad;
+            }
+
+            //PlaySound();
+            PlaySound.Play();
+        }
+
+        private void chay_Tick(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

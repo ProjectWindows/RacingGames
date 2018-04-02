@@ -16,7 +16,7 @@ namespace ProjectGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Play());
+            Application.Run(new pcbXe3());
         }
     }
 }

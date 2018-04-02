@@ -14,6 +14,6 @@ E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.pdb
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\bin\Debug\ProjectGame.exe
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\bin\Debug\ProjectGame.pdb
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.csprojResolveAssemblyReference.cache
-E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.Play.resources
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.Properties.Resources.resources
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.csproj.GenerateResource.Cache
+E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.pcbXe3.resources
