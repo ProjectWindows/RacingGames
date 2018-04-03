@@ -31,6 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pcbXe3));
             this.plNen = new System.Windows.Forms.Panel();
+            this.pcbPower = new System.Windows.Forms.PictureBox();
+            this.pcbEndGame = new System.Windows.Forms.PictureBox();
+            this.pcbXeDien = new System.Windows.Forms.PictureBox();
+            this.pcbXe2 = new System.Windows.Forms.PictureBox();
+            this.pcbXe1 = new System.Windows.Forms.PictureBox();
+            this.pcbNo = new System.Windows.Forms.PictureBox();
+            this.pcbPlayer = new System.Windows.Forms.PictureBox();
+            this.pcbDuong1 = new System.Windows.Forms.PictureBox();
+            this.pcbDuong2 = new System.Windows.Forms.PictureBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbDiem = new System.Windows.Forms.Label();
@@ -72,16 +81,16 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pcbPower = new System.Windows.Forms.PictureBox();
-            this.pcbEndGame = new System.Windows.Forms.PictureBox();
-            this.pcbXe2 = new System.Windows.Forms.PictureBox();
-            this.pcbXe1 = new System.Windows.Forms.PictureBox();
-            this.pcbNo = new System.Windows.Forms.PictureBox();
-            this.pcbPlayer = new System.Windows.Forms.PictureBox();
-            this.pcbDuong1 = new System.Windows.Forms.PictureBox();
-            this.pcbDuong2 = new System.Windows.Forms.PictureBox();
-            this.pcbXeDien = new System.Windows.Forms.PictureBox();
             this.plNen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEndGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXeDien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXe2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXe1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -94,15 +103,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbPower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEndGame)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbXe2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbXe1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbXeDien)).BeginInit();
             this.SuspendLayout();
             // 
             // plNen
@@ -122,6 +122,101 @@
             this.plNen.Name = "plNen";
             this.plNen.Size = new System.Drawing.Size(561, 627);
             this.plNen.TabIndex = 0;
+            // 
+            // pcbPower
+            // 
+            this.pcbPower.BackColor = System.Drawing.Color.Silver;
+            this.pcbPower.Image = global::ProjectGame.Properties.Resources.Spark;
+            this.pcbPower.Location = new System.Drawing.Point(241, 459);
+            this.pcbPower.Name = "pcbPower";
+            this.pcbPower.Size = new System.Drawing.Size(65, 65);
+            this.pcbPower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPower.TabIndex = 8;
+            this.pcbPower.TabStop = false;
+            // 
+            // pcbEndGame
+            // 
+            this.pcbEndGame.Image = global::ProjectGame.Properties.Resources.YoungDriver;
+            this.pcbEndGame.Location = new System.Drawing.Point(95, 227);
+            this.pcbEndGame.Name = "pcbEndGame";
+            this.pcbEndGame.Size = new System.Drawing.Size(373, 132);
+            this.pcbEndGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbEndGame.TabIndex = 7;
+            this.pcbEndGame.TabStop = false;
+            // 
+            // pcbXeDien
+            // 
+            this.pcbXeDien.BackColor = System.Drawing.Color.Transparent;
+            this.pcbXeDien.Image = global::ProjectGame.Properties.Resources.Police;
+            this.pcbXeDien.Location = new System.Drawing.Point(271, 3);
+            this.pcbXeDien.Name = "pcbXeDien";
+            this.pcbXeDien.Size = new System.Drawing.Size(50, 100);
+            this.pcbXeDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbXeDien.TabIndex = 3;
+            this.pcbXeDien.TabStop = false;
+            // 
+            // pcbXe2
+            // 
+            this.pcbXe2.BackColor = System.Drawing.Color.Transparent;
+            this.pcbXe2.Image = global::ProjectGame.Properties.Resources.Police;
+            this.pcbXe2.Location = new System.Drawing.Point(390, 60);
+            this.pcbXe2.Name = "pcbXe2";
+            this.pcbXe2.Size = new System.Drawing.Size(50, 100);
+            this.pcbXe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbXe2.TabIndex = 3;
+            this.pcbXe2.TabStop = false;
+            // 
+            // pcbXe1
+            // 
+            this.pcbXe1.BackColor = System.Drawing.Color.Transparent;
+            this.pcbXe1.Image = global::ProjectGame.Properties.Resources.Police;
+            this.pcbXe1.Location = new System.Drawing.Point(79, 33);
+            this.pcbXe1.Name = "pcbXe1";
+            this.pcbXe1.Size = new System.Drawing.Size(50, 100);
+            this.pcbXe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbXe1.TabIndex = 3;
+            this.pcbXe1.TabStop = false;
+            // 
+            // pcbNo
+            // 
+            this.pcbNo.Image = ((System.Drawing.Image)(resources.GetObject("pcbNo.Image")));
+            this.pcbNo.Location = new System.Drawing.Point(241, 440);
+            this.pcbNo.Name = "pcbNo";
+            this.pcbNo.Size = new System.Drawing.Size(65, 65);
+            this.pcbNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbNo.TabIndex = 2;
+            this.pcbNo.TabStop = false;
+            // 
+            // pcbPlayer
+            // 
+            this.pcbPlayer.BackColor = System.Drawing.Color.Transparent;
+            this.pcbPlayer.Image = global::ProjectGame.Properties.Resources.carOrange;
+            this.pcbPlayer.Location = new System.Drawing.Point(249, 494);
+            this.pcbPlayer.Name = "pcbPlayer";
+            this.pcbPlayer.Size = new System.Drawing.Size(50, 100);
+            this.pcbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPlayer.TabIndex = 1;
+            this.pcbPlayer.TabStop = false;
+            // 
+            // pcbDuong1
+            // 
+            this.pcbDuong1.Image = global::ProjectGame.Properties.Resources.Road;
+            this.pcbDuong1.Location = new System.Drawing.Point(-3, -808);
+            this.pcbDuong1.Name = "pcbDuong1";
+            this.pcbDuong1.Size = new System.Drawing.Size(562, 800);
+            this.pcbDuong1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbDuong1.TabIndex = 0;
+            this.pcbDuong1.TabStop = false;
+            // 
+            // pcbDuong2
+            // 
+            this.pcbDuong2.Image = global::ProjectGame.Properties.Resources.Road;
+            this.pcbDuong2.Location = new System.Drawing.Point(-3, -142);
+            this.pcbDuong2.Name = "pcbDuong2";
+            this.pcbDuong2.Size = new System.Drawing.Size(562, 800);
+            this.pcbDuong2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbDuong2.TabIndex = 0;
+            this.pcbDuong2.TabStop = false;
             // 
             // btnStart
             // 
@@ -549,99 +644,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pcbPower
-            // 
-            this.pcbPower.BackColor = System.Drawing.Color.Silver;
-            this.pcbPower.Image = global::ProjectGame.Properties.Resources.Spark;
-            this.pcbPower.Location = new System.Drawing.Point(241, 459);
-            this.pcbPower.Name = "pcbPower";
-            this.pcbPower.Size = new System.Drawing.Size(65, 65);
-            this.pcbPower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbPower.TabIndex = 8;
-            this.pcbPower.TabStop = false;
-            // 
-            // pcbEndGame
-            // 
-            this.pcbEndGame.Image = global::ProjectGame.Properties.Resources.YoungDriver;
-            this.pcbEndGame.Location = new System.Drawing.Point(95, 227);
-            this.pcbEndGame.Name = "pcbEndGame";
-            this.pcbEndGame.Size = new System.Drawing.Size(373, 132);
-            this.pcbEndGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbEndGame.TabIndex = 7;
-            this.pcbEndGame.TabStop = false;
-            // 
-            // pcbXe2
-            // 
-            this.pcbXe2.Image = global::ProjectGame.Properties.Resources.Police;
-            this.pcbXe2.Location = new System.Drawing.Point(390, 60);
-            this.pcbXe2.Name = "pcbXe2";
-            this.pcbXe2.Size = new System.Drawing.Size(50, 100);
-            this.pcbXe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbXe2.TabIndex = 3;
-            this.pcbXe2.TabStop = false;
-            // 
-            // pcbXe1
-            // 
-            this.pcbXe1.BackColor = System.Drawing.Color.Transparent;
-            this.pcbXe1.Image = global::ProjectGame.Properties.Resources.Police;
-            this.pcbXe1.Location = new System.Drawing.Point(79, 33);
-            this.pcbXe1.Name = "pcbXe1";
-            this.pcbXe1.Size = new System.Drawing.Size(50, 100);
-            this.pcbXe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbXe1.TabIndex = 3;
-            this.pcbXe1.TabStop = false;
-            // 
-            // pcbNo
-            // 
-            this.pcbNo.Image = ((System.Drawing.Image)(resources.GetObject("pcbNo.Image")));
-            this.pcbNo.Location = new System.Drawing.Point(241, 440);
-            this.pcbNo.Name = "pcbNo";
-            this.pcbNo.Size = new System.Drawing.Size(65, 65);
-            this.pcbNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbNo.TabIndex = 2;
-            this.pcbNo.TabStop = false;
-            // 
-            // pcbPlayer
-            // 
-            this.pcbPlayer.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pcbPlayer.Image = global::ProjectGame.Properties.Resources.carOrange;
-            this.pcbPlayer.Location = new System.Drawing.Point(249, 494);
-            this.pcbPlayer.Name = "pcbPlayer";
-            this.pcbPlayer.Size = new System.Drawing.Size(50, 100);
-            this.pcbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbPlayer.TabIndex = 1;
-            this.pcbPlayer.TabStop = false;
-            // 
-            // pcbDuong1
-            // 
-            this.pcbDuong1.Image = global::ProjectGame.Properties.Resources.Road;
-            this.pcbDuong1.Location = new System.Drawing.Point(-3, -808);
-            this.pcbDuong1.Name = "pcbDuong1";
-            this.pcbDuong1.Size = new System.Drawing.Size(562, 800);
-            this.pcbDuong1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbDuong1.TabIndex = 0;
-            this.pcbDuong1.TabStop = false;
-            // 
-            // pcbDuong2
-            // 
-            this.pcbDuong2.Image = global::ProjectGame.Properties.Resources.Road;
-            this.pcbDuong2.Location = new System.Drawing.Point(-3, -142);
-            this.pcbDuong2.Name = "pcbDuong2";
-            this.pcbDuong2.Size = new System.Drawing.Size(562, 800);
-            this.pcbDuong2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbDuong2.TabIndex = 0;
-            this.pcbDuong2.TabStop = false;
-            // 
-            // pcbXeDien
-            // 
-            this.pcbXeDien.Image = global::ProjectGame.Properties.Resources.Police;
-            this.pcbXeDien.Location = new System.Drawing.Point(277, 3);
-            this.pcbXeDien.Name = "pcbXeDien";
-            this.pcbXeDien.Size = new System.Drawing.Size(50, 100);
-            this.pcbXeDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbXeDien.TabIndex = 3;
-            this.pcbXeDien.TabStop = false;
-            // 
             // pcbXe3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -691,6 +693,15 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Play_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Play_KeyUp);
             this.plNen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEndGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXeDien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXe2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbXe1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -703,15 +714,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbPower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEndGame)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbXe2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbXe1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbXeDien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

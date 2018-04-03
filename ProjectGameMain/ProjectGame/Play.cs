@@ -54,7 +54,7 @@ namespace ProjectGame
             TocDoDC = 5; // lấy giá trị mặc định của TocDo=5.
             TDDuong = 5; // lấy giá trị mặc định của TDDuong=5.
             Diem = 0; // đặt Điểm lại 0
-            Impossible = 0;
+            //Impossible = 0;
 
             pcbPlayer.Left = 249; // đặt lại vị trí đầu
             pcbPlayer.Top = 494; // đặt lại vị trí đầu
@@ -65,12 +65,20 @@ namespace ProjectGame
             Xuong = false;
             Tang = false;
 
+            //đặt bot lại vị trí ban đầu
+            pcbXe1.Left = 79;
+            pcbXe1.Top = 33;
+            pcbXeDien.Left = 271;
+            pcbXeDien.Top = 3;
+            pcbXe2.Left = 390;
+            pcbXe2.Top = 60;
+
             //đặt lại đường về vị trí đẩu
             pcbDuong2.Left = -3;
             pcbDuong2.Top = -142;
             pcbDuong1.Left = -3;
             pcbDuong1.Top = -808;
-
+            
             // start timer1
             timer1.Start();
         }
@@ -171,27 +179,27 @@ namespace ProjectGame
             if (pcbXe1.Top > plNen.Height)
             {
                 ChangeXe1(); // chọn xe ngẫu nhiên làm vật cản
-                pcbXe1.Left = rd.Next(2, 249); //random số bên trái
+                pcbXe1.Left = rd.Next(3, 249); //random số bên trái
                 pcbXe1.Top = rd.Next(100, 200) * -1; // radom số bên phải
             }
             if (pcbXe2.Top > plNen.Height)
             {
                 ChangeXe2();
-                pcbXe2.Left = rd.Next(265, 540);
+                pcbXe2.Left = rd.Next(265, 504);
                 pcbXe2.Top = rd.Next(100, 200) * -1;
             }
-            //xuat hien ngau nhien chuong ngai vat
+            //xuat hien ngau nhien xe 3
             if (pcbXeDien.Top > plNen.Height)
             {
-                ChangeXeDien();
-                pcbXeDien.Left = rd.Next(2, 540);
-                pcbXeDien.Top = rd.Next(200, 250) * -1;
+                //ChangeXeDien();
+                pcbXeDien.Left = rd.Next(3, 504);
+                pcbXeDien.Top = rd.Next(220,240) * -1;
             }
             // kết thúc cho xe xuất hiện ngẫu nhiên
             // nếu palyer đụng xe 1 or xe 2
-            if (pcbPlayer.Bounds.IntersectsWith(pcbXe1.Bounds) || pcbPlayer.Bounds.IntersectsWith(pcbXe2.Bounds))
+            if (pcbPlayer.Bounds.IntersectsWith(pcbXe1.Bounds) || pcbPlayer.Bounds.IntersectsWith(pcbXe2.Bounds) || pcbPlayer.Bounds.IntersectsWith(pcbXeDien.Bounds))
             {
-                GameOver(); // kết thúc game khi đụng phải xe 1 or xe 2
+                //GameOver(); // kết thúc game khi đụng phải xe 1 or xe 2
 
             }
             // tăng tốc dường băng
