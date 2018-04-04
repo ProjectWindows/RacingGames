@@ -381,85 +381,12 @@ namespace Project_Game
         }
 
 
-        /* private void PlaySound()
-         {
-             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
-             player.Play();
-         }*/
-        void LoadImageName()
+       /* private void PlaySound()
         {
-            //List<string> ListImage = new List<string>() { "carGreen", "carGrey", "ambulance","CarBlack","CarBlue","carOrange","carPink","CarRed","CarWhite","carYellow","Police","TruckBlue","TruckWhite"};
-            //comboBox1.DataSource = ListImage;
-        }
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
+            player.Play();
+        }*/
 
-        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
-        {
-            //ComboBox cb = sender as ComboBox;
-            //if (cb.SelectedValue != null)
-            //{
-            //    Bitmap bm = new Bitmap(Application.StartupPath + "\\Resources\\" + cb.SelectedValue.ToString() + ".png");
-            //    pcbImage.Image = bm;
-            //}
-            //this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-        }
-
-        private void btChon_Click(object sender, EventArgs e)
-        {
-            //string NameCar = comboBox1.SelectedValue.ToString();
-            //if(NameCar == "carGreen")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.carGreen;
-            //}
-            //if (NameCar == "carGrey")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.carGrey;
-            //}
-            //if (NameCar == "ambulance")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.ambulance;
-            //}
-            //if (NameCar == "CarBlack")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.CarBlack;
-            //}
-            //if (NameCar == "CarBlue")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.CarBlue;
-            //}
-            //if (NameCar == "carOrange")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.carOrange;
-            //}
-            //if (NameCar == "carPink")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.carPink;
-            //}
-            //if (NameCar == "CarRed")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.CarRed;
-            //}
-            //if (NameCar == "CarWhite")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.CarWhite;
-            //}
-            //if (NameCar == "carYellow")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.carYellow;
-            //}
-            //if (NameCar == "Police")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.Police;
-            //}
-            //if (NameCar == "TruckBlue")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.TruckBlue; 
-            //}
-            //if (NameCar == "TruckWhite")
-            //{
-            //    pcbPlayer.Image = Properties.Resources.TruckWhite;
-            //}
-
-        }
-
+        
     }
 }

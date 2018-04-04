@@ -9,13 +9,3 @@ D:\LTTWD\Project Game\Project Game\obj\Debug\Project Game.csproj.CoreCompileInpu
 D:\LTTWD\Project Game\Project Game\obj\Debug\Project Game.exe
 D:\LTTWD\Project Game\Project Game\obj\Debug\Project Game.pdb
 D:\LTTWD\Project Game\Project Game\obj\Debug\Project_Game.RacingGame.resources
-E:\Github\RacingGames\Project Game\Project Game\bin\Debug\Project Game.exe.config
-E:\Github\RacingGames\Project Game\Project Game\obj\Debug\Project Game.exe
-E:\Github\RacingGames\Project Game\Project Game\obj\Debug\Project Game.pdb
-E:\Github\RacingGames\Project Game\Project Game\bin\Debug\Project Game.exe
-E:\Github\RacingGames\Project Game\Project Game\bin\Debug\Project Game.pdb
-E:\Github\RacingGames\Project Game\Project Game\obj\Debug\Project Game.csprojResolveAssemblyReference.cache
-E:\Github\RacingGames\Project Game\Project Game\obj\Debug\Project_Game.Play.resources
-E:\Github\RacingGames\Project Game\Project Game\obj\Debug\Project_Game.Properties.Resources.resources
-E:\Github\RacingGames\Project Game\Project Game\obj\Debug\Project_Game.RacingGame.resources
-E:\Github\RacingGames\Project Game\Project Game\obj\Debug\Project Game.csproj.GenerateResource.Cache
