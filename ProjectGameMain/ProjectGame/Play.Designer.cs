@@ -159,7 +159,7 @@
             // 
             this.pcbXe2.BackColor = System.Drawing.Color.Transparent;
             this.pcbXe2.Image = global::ProjectGame.Properties.Resources.Police;
-            this.pcbXe2.Location = new System.Drawing.Point(390, 60);
+            this.pcbXe2.Location = new System.Drawing.Point(453, 81);
             this.pcbXe2.Name = "pcbXe2";
             this.pcbXe2.Size = new System.Drawing.Size(50, 100);
             this.pcbXe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +170,7 @@
             // 
             this.pcbXe1.BackColor = System.Drawing.Color.Transparent;
             this.pcbXe1.Image = global::ProjectGame.Properties.Resources.Police;
-            this.pcbXe1.Location = new System.Drawing.Point(79, 33);
+            this.pcbXe1.Location = new System.Drawing.Point(71, 65);
             this.pcbXe1.Name = "pcbXe1";
             this.pcbXe1.Size = new System.Drawing.Size(50, 100);
             this.pcbXe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

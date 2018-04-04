@@ -223,9 +223,39 @@ namespace ProjectGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap road2 {
+            get {
+                object obj = ResourceManager.GetObject("road2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Spark {
             get {
                 object obj = ResourceManager.GetObject("Spark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap square__3_ {
+            get {
+                object obj = ResourceManager.GetObject("square (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trontim {
+            get {
+                object obj = ResourceManager.GetObject("trontim", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

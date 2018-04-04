@@ -17,3 +17,4 @@ E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.csprojRe
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.Properties.Resources.resources
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.csproj.GenerateResource.Cache
 E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.pcbXe3.resources
+E:\Github\RacingGames\ProjectGameMain\ProjectGame\obj\Debug\ProjectGame.TwoCar.resources

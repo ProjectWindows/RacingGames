@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2Cars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2Cars.Designer.cs">
+      <DependentUpon>2Cars.cs</DependentUpon>
+    </Compile>
     <Compile Include="Play.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     <Compile Include="RacingGame.Designer.cs">
       <DependentUpon>RacingGame.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="2Cars.resx">
+      <DependentUpon>2Cars.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Play.resx">
       <DependentUpon>Play.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\racing-cars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\road2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

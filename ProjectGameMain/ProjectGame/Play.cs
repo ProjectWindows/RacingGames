@@ -13,11 +13,11 @@ namespace ProjectGame
 {
     public partial class pcbXe3 : Form
     {
-     
+
         SoundPlayer p = new SoundPlayer(@"playgame.wav");
         SoundPlayer PlaySound = new SoundPlayer(@"hit.wav");
 
-       
+
         // biến toàn cục
         int TDXe = 5;
         int TDDuong = 5;
@@ -32,8 +32,8 @@ namespace ProjectGame
         int VanToc = 0;
         int Impossible = 0;
         Random rd = new Random();
-        
-        
+
+
         public pcbXe3()
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace ProjectGame
 
         void Reset()
         {
-          
+
             p.PlayLooping();
             pcbPower.Visible = false; //ẩn hình power
             pcbEndGame.Visible = false; // ẩn bảng chiến thắng 
@@ -78,21 +78,21 @@ namespace ProjectGame
             pcbDuong2.Top = -142;
             pcbDuong1.Left = -3;
             pcbDuong1.Top = -808;
-            
+
             // start timer1
             timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+
             Diem++; // tăng điểm khi di chuyển
-            VanToc+=1;
+            VanToc += 1;
             if (VanToc >= 330)
             {
                 VanToc = 329;
             }
-            if(Tang)
+            if (Tang)
             {
                 VanToc = 720;
             }
@@ -123,29 +123,29 @@ namespace ProjectGame
             {
                 pcbPlayer.Left += TDXe; //di chuyển phải nếu Phai là true
             }
-            if(Len)
+            if (Len)
             {
                 pcbPlayer.Top += TDXe;
             }
-            if(Xuong)
+            if (Xuong)
             {
                 pcbPlayer.Top -= TDXe;
             }
-            if(Tang)
+            if (Tang)
             {
                 pcbPlayer.Top -= TangToc;
                 pgbTocDo.Value -= 1;
             }
-            
+
             // kết thúc di chuyển xe
-            if(pcbPlayer.Top<0)
+            if (pcbPlayer.Top < 0)
             {
                 Xuong = false;
                 pcbPlayer.Top = 1;
             }
             else
             {
-                if(pcbPlayer.Top +pcbPlayer.Height>plNen.Height)
+                if (pcbPlayer.Top + pcbPlayer.Height > plNen.Height)
                 {
                     Len = false;
                 }
@@ -161,8 +161,8 @@ namespace ProjectGame
                     Phai = false;
                 }
             }
-            
-            if(pgbTocDo.Value==0)
+
+            if (pgbTocDo.Value == 0)
             {
                 Tang = false;
             }
@@ -193,7 +193,7 @@ namespace ProjectGame
             {
                 //ChangeXeDien();
                 pcbXeDien.Left = rd.Next(3, 504);
-                pcbXeDien.Top = rd.Next(220,240) * -1;
+                pcbXeDien.Top = rd.Next(220, 240) * -1;
             }
             // kết thúc cho xe xuất hiện ngẫu nhiên
             // nếu palyer đụng xe 1 or xe 2
@@ -235,12 +235,12 @@ namespace ProjectGame
             Reset();
         }
 
-       
-       
+
+
 
         private void Play_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Play_KeyDown(object sender, KeyEventArgs e)
@@ -249,7 +249,7 @@ namespace ProjectGame
             if (e.KeyCode == Keys.Left && pcbPlayer.Left > 0)
             {
                 Trai = true;
-               TocDo.Start();
+                TocDo.Start();
             }
             // xe qua phải thì Phai là true
             if (e.KeyCode == Keys.Right && pcbPlayer.Left + pcbPlayer.Width < plNen.Width)
@@ -257,26 +257,26 @@ namespace ProjectGame
                 Phai = true;
                 TocDo.Start();
             }
-            if(e.KeyCode==Keys.Down && pcbPlayer.Top+pcbPlayer.Height<plNen.Height)
+            if (e.KeyCode == Keys.Down && pcbPlayer.Top + pcbPlayer.Height < plNen.Height)
             {
                 Len = true;
                 TocDo.Start();
             }
-            if(e.KeyCode==Keys.Up && pcbPlayer.Top>0)
+            if (e.KeyCode == Keys.Up && pcbPlayer.Top > 0)
             {
                 Xuong = true;
                 TocDo.Start();
             }
-           if(e.KeyCode==Keys.S && pgbTocDo.Value==10)
+            if (e.KeyCode == Keys.S && pgbTocDo.Value == 10)
             {
                 Tang = true;
                 pcbPower.Visible = true;
-                pcbPlayer.Controls.Add(pcbPower); 
+                pcbPlayer.Controls.Add(pcbPower);
                 pcbPower.Location = new Point(-8, 7);
-                pcbPower.BackColor = Color.Transparent; 
+                pcbPower.BackColor = Color.Transparent;
                 pcbPower.BringToFront();
             }
-           if(e.KeyCode == Keys.F1)
+            if (e.KeyCode == Keys.F1)
             {
                 pcbPlayer.Image = Properties.Resources.carOrange;
             }
@@ -324,7 +324,7 @@ namespace ProjectGame
             {
                 pcbPlayer.Image = Properties.Resources.CarBlack;
             }
-            
+
 
         }
 
@@ -333,17 +333,17 @@ namespace ProjectGame
             if (e.KeyCode == Keys.Left)
             {
                 Trai = false;
-      
+
             }
             if (e.KeyCode == Keys.Right)
             {
                 Phai = false;
             }
-            if(e.KeyCode==Keys.Up)
+            if (e.KeyCode == Keys.Up)
             {
                 Xuong = false;
             }
-            if(e.KeyCode==Keys.Down)
+            if (e.KeyCode == Keys.Down)
             {
                 Len = false;
             }
@@ -352,7 +352,7 @@ namespace ProjectGame
         private void TocDo_Tick(object sender, EventArgs e)
         {
             this.pgbTocDo.Increment(1);
-            
+
         }
 
         private void pgbTocDo_Click(object sender, EventArgs e)
@@ -365,7 +365,7 @@ namespace ProjectGame
 
         }
 
-        
+
 
         private void ChangeXe2()
         {
@@ -503,13 +503,14 @@ namespace ProjectGame
 
         private void chay_Tick(object sender, EventArgs e)
         {
-           
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
+
     }
     }
 

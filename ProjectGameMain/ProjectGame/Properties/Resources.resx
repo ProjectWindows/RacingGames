@@ -142,6 +142,9 @@
   <data name="carGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="road2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\road2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="carOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,6 +169,9 @@
   <data name="carPink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carPink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="phao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phao.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KingOfRoad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KingOfRoad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,7 +181,10 @@
   <data name="Police" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Police.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phao.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trontim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trontim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\square (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

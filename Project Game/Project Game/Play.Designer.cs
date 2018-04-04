@@ -31,13 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Play));
             this.plNen = new System.Windows.Forms.Panel();
-            this.pcbPlayer = new System.Windows.Forms.PictureBox();
-            this.pcbNo = new System.Windows.Forms.PictureBox();
-            this.pcbChienThang = new System.Windows.Forms.PictureBox();
-            this.pcbxe2 = new System.Windows.Forms.PictureBox();
-            this.pcbxe1 = new System.Windows.Forms.PictureBox();
-            this.pcbDuong2 = new System.Windows.Forms.PictureBox();
-            this.pcbDuong1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,7 +40,16 @@
             this.lbHuongDan = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcbPlayer = new System.Windows.Forms.PictureBox();
+            this.pcbNo = new System.Windows.Forms.PictureBox();
+            this.pcbChienThang = new System.Windows.Forms.PictureBox();
+            this.pcbxe2 = new System.Windows.Forms.PictureBox();
+            this.pcbxe1 = new System.Windows.Forms.PictureBox();
+            this.pcbDuong2 = new System.Windows.Forms.PictureBox();
+            this.pcbDuong1 = new System.Windows.Forms.PictureBox();
             this.plNen.SuspendLayout();
+            this.plHuongDan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbChienThang)).BeginInit();
@@ -55,8 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbxe1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).BeginInit();
-            this.plHuongDan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // plNen
@@ -74,81 +74,6 @@
             this.plNen.Name = "plNen";
             this.plNen.Size = new System.Drawing.Size(380, 424);
             this.plNen.TabIndex = 0;
-            // 
-            // pcbPlayer
-            // 
-            this.pcbPlayer.BackColor = System.Drawing.Color.Transparent;
-            this.pcbPlayer.Image = ((System.Drawing.Image)(resources.GetObject("pcbPlayer.Image")));
-            this.pcbPlayer.Location = new System.Drawing.Point(161, 286);
-            this.pcbPlayer.Name = "pcbPlayer";
-            this.pcbPlayer.Size = new System.Drawing.Size(49, 100);
-            this.pcbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbPlayer.TabIndex = 3;
-            this.pcbPlayer.TabStop = false;
-            // 
-            // pcbNo
-            // 
-            this.pcbNo.BackColor = System.Drawing.Color.Transparent;
-            this.pcbNo.Image = ((System.Drawing.Image)(resources.GetObject("pcbNo.Image")));
-            this.pcbNo.Location = new System.Drawing.Point(153, 234);
-            this.pcbNo.Name = "pcbNo";
-            this.pcbNo.Size = new System.Drawing.Size(64, 64);
-            this.pcbNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbNo.TabIndex = 3;
-            this.pcbNo.TabStop = false;
-            // 
-            // pcbChienThang
-            // 
-            this.pcbChienThang.BackColor = System.Drawing.Color.Transparent;
-            this.pcbChienThang.Image = ((System.Drawing.Image)(resources.GetObject("pcbChienThang.Image")));
-            this.pcbChienThang.Location = new System.Drawing.Point(66, 157);
-            this.pcbChienThang.Name = "pcbChienThang";
-            this.pcbChienThang.Size = new System.Drawing.Size(250, 100);
-            this.pcbChienThang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbChienThang.TabIndex = 3;
-            this.pcbChienThang.TabStop = false;
-            // 
-            // pcbxe2
-            // 
-            this.pcbxe2.BackColor = System.Drawing.Color.Transparent;
-            this.pcbxe2.Image = ((System.Drawing.Image)(resources.GetObject("pcbxe2.Image")));
-            this.pcbxe2.Location = new System.Drawing.Point(294, 85);
-            this.pcbxe2.Name = "pcbxe2";
-            this.pcbxe2.Size = new System.Drawing.Size(49, 100);
-            this.pcbxe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbxe2.TabIndex = 3;
-            this.pcbxe2.TabStop = false;
-            // 
-            // pcbxe1
-            // 
-            this.pcbxe1.BackColor = System.Drawing.Color.Transparent;
-            this.pcbxe1.Image = ((System.Drawing.Image)(resources.GetObject("pcbxe1.Image")));
-            this.pcbxe1.Location = new System.Drawing.Point(66, 19);
-            this.pcbxe1.Name = "pcbxe1";
-            this.pcbxe1.Size = new System.Drawing.Size(49, 100);
-            this.pcbxe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbxe1.TabIndex = 3;
-            this.pcbxe1.TabStop = false;
-            // 
-            // pcbDuong2
-            // 
-            this.pcbDuong2.Image = ((System.Drawing.Image)(resources.GetObject("pcbDuong2.Image")));
-            this.pcbDuong2.Location = new System.Drawing.Point(-3, -222);
-            this.pcbDuong2.Name = "pcbDuong2";
-            this.pcbDuong2.Size = new System.Drawing.Size(385, 632);
-            this.pcbDuong2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbDuong2.TabIndex = 2;
-            this.pcbDuong2.TabStop = false;
-            // 
-            // pcbDuong1
-            // 
-            this.pcbDuong1.Image = ((System.Drawing.Image)(resources.GetObject("pcbDuong1.Image")));
-            this.pcbDuong1.Location = new System.Drawing.Point(-2, -638);
-            this.pcbDuong1.Name = "pcbDuong1";
-            this.pcbDuong1.Size = new System.Drawing.Size(385, 632);
-            this.pcbDuong1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbDuong1.TabIndex = 1;
-            this.pcbDuong1.TabStop = false;
             // 
             // timer1
             // 
@@ -240,6 +165,81 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // pcbPlayer
+            // 
+            this.pcbPlayer.BackColor = System.Drawing.Color.Transparent;
+            this.pcbPlayer.Image = ((System.Drawing.Image)(resources.GetObject("pcbPlayer.Image")));
+            this.pcbPlayer.Location = new System.Drawing.Point(161, 286);
+            this.pcbPlayer.Name = "pcbPlayer";
+            this.pcbPlayer.Size = new System.Drawing.Size(49, 100);
+            this.pcbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPlayer.TabIndex = 3;
+            this.pcbPlayer.TabStop = false;
+            // 
+            // pcbNo
+            // 
+            this.pcbNo.BackColor = System.Drawing.Color.Transparent;
+            this.pcbNo.Image = ((System.Drawing.Image)(resources.GetObject("pcbNo.Image")));
+            this.pcbNo.Location = new System.Drawing.Point(153, 234);
+            this.pcbNo.Name = "pcbNo";
+            this.pcbNo.Size = new System.Drawing.Size(64, 64);
+            this.pcbNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbNo.TabIndex = 3;
+            this.pcbNo.TabStop = false;
+            // 
+            // pcbChienThang
+            // 
+            this.pcbChienThang.BackColor = System.Drawing.Color.Transparent;
+            this.pcbChienThang.Image = ((System.Drawing.Image)(resources.GetObject("pcbChienThang.Image")));
+            this.pcbChienThang.Location = new System.Drawing.Point(66, 157);
+            this.pcbChienThang.Name = "pcbChienThang";
+            this.pcbChienThang.Size = new System.Drawing.Size(250, 100);
+            this.pcbChienThang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbChienThang.TabIndex = 3;
+            this.pcbChienThang.TabStop = false;
+            // 
+            // pcbxe2
+            // 
+            this.pcbxe2.BackColor = System.Drawing.Color.Transparent;
+            this.pcbxe2.Image = ((System.Drawing.Image)(resources.GetObject("pcbxe2.Image")));
+            this.pcbxe2.Location = new System.Drawing.Point(294, 85);
+            this.pcbxe2.Name = "pcbxe2";
+            this.pcbxe2.Size = new System.Drawing.Size(49, 100);
+            this.pcbxe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbxe2.TabIndex = 3;
+            this.pcbxe2.TabStop = false;
+            // 
+            // pcbxe1
+            // 
+            this.pcbxe1.BackColor = System.Drawing.Color.Transparent;
+            this.pcbxe1.Image = ((System.Drawing.Image)(resources.GetObject("pcbxe1.Image")));
+            this.pcbxe1.Location = new System.Drawing.Point(66, 19);
+            this.pcbxe1.Name = "pcbxe1";
+            this.pcbxe1.Size = new System.Drawing.Size(49, 100);
+            this.pcbxe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbxe1.TabIndex = 3;
+            this.pcbxe1.TabStop = false;
+            // 
+            // pcbDuong2
+            // 
+            this.pcbDuong2.Image = ((System.Drawing.Image)(resources.GetObject("pcbDuong2.Image")));
+            this.pcbDuong2.Location = new System.Drawing.Point(-3, -222);
+            this.pcbDuong2.Name = "pcbDuong2";
+            this.pcbDuong2.Size = new System.Drawing.Size(385, 632);
+            this.pcbDuong2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbDuong2.TabIndex = 2;
+            this.pcbDuong2.TabStop = false;
+            // 
+            // pcbDuong1
+            // 
+            this.pcbDuong1.Image = ((System.Drawing.Image)(resources.GetObject("pcbDuong1.Image")));
+            this.pcbDuong1.Location = new System.Drawing.Point(-2, -638);
+            this.pcbDuong1.Name = "pcbDuong1";
+            this.pcbDuong1.Size = new System.Drawing.Size(385, 632);
+            this.pcbDuong1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbDuong1.TabIndex = 1;
+            this.pcbDuong1.TabStop = false;
+            // 
             // Play
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +261,9 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Play_KeyUp);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Play_PreviewKeyDown);
             this.plNen.ResumeLayout(false);
+            this.plHuongDan.ResumeLayout(false);
+            this.plHuongDan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbChienThang)).EndInit();
@@ -268,9 +271,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbxe1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDuong1)).EndInit();
-            this.plHuongDan.ResumeLayout(false);
-            this.plHuongDan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
