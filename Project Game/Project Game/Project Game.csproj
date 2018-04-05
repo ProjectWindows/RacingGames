@@ -151,5 +151,29 @@
   <ItemGroup>
     <None Include="Resources\road2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trontim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket-ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GhostDriver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KingOfRoad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YoungDriver.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
