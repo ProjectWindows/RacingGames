@@ -42,5 +42,12 @@ namespace Project_Game
         {
             play.Play();
         }
+
+        private void bt2cars_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            _2Cars mode2 = new _2Cars();
+            mode2.ShowDialog();
+        }
     }
 }

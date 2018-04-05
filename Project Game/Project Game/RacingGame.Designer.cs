@@ -31,6 +31,7 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.bt2cars = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPlay
@@ -72,6 +73,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "RACING GAME";
             // 
+            // bt2cars
+            // 
+            this.bt2cars.Location = new System.Drawing.Point(372, 325);
+            this.bt2cars.Name = "bt2cars";
+            this.bt2cars.Size = new System.Drawing.Size(99, 36);
+            this.bt2cars.TabIndex = 3;
+            this.bt2cars.Text = "bt2cars";
+            this.bt2cars.UseVisualStyleBackColor = true;
+            this.bt2cars.Click += new System.EventHandler(this.bt2cars_Click);
+            // 
             // RacingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -79,6 +90,7 @@
             this.BackgroundImage = global::Project_Game.Properties.Resources.racing_cars;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bt2cars);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlay);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt2cars;
     }
 }
