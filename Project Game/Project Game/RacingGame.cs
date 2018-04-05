@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Threading;
 
 
 namespace Project_Game
@@ -19,7 +20,30 @@ namespace Project_Game
         public RacingGame()
         {
             InitializeComponent();
-          //  play.PlayLooping();
+            Control.CheckForIllegalCrossThreadCalls = false;
+            DisPlay();
+         //   play.PlayLooping();
+        }
+
+        public void DisPlay()
+        {
+            new Thread(() =>
+            {
+                int i = 0;
+                while (i >= 0)
+                {
+                    Thread.Sleep(300);
+                    label1.Visible = false;
+                    Thread.Sleep(300);
+                    label1.Visible = true;
+                    if (i % 2 == 0)
+                        label1.ForeColor = Color.Orange;
+                    else
+                        label1.ForeColor = Color.Tomato;
+                    i++;
+                }
+            })
+            { IsBackground = true }.Start();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)

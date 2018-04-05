@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_2Cars));
             this.plNen = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+=======
+            this.pcbChienThang = new System.Windows.Forms.PictureBox();
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.No1 = new System.Windows.Forms.PictureBox();
             this.Food1 = new System.Windows.Forms.PictureBox();
             this.No2 = new System.Windows.Forms.PictureBox();
@@ -42,12 +46,21 @@
             this.plHuongDan = new System.Windows.Forms.Panel();
             this.lbHuongDan = new System.Windows.Forms.Label();
             this.lbExit = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.lbDiem = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.score = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.plNen.SuspendLayout();
+=======
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.plNen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbChienThang)).BeginInit();
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             ((System.ComponentModel.ISupportInitialize)(this.No1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Food1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.No2)).BeginInit();
@@ -64,6 +77,10 @@
             // 
             this.plNen.BackColor = System.Drawing.Color.Black;
             this.plNen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+<<<<<<< HEAD
+=======
+            this.plNen.Controls.Add(this.pcbChienThang);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.plNen.Controls.Add(this.No1);
             this.plNen.Controls.Add(this.Food1);
             this.plNen.Controls.Add(this.No2);
@@ -77,6 +94,7 @@
             this.plNen.Size = new System.Drawing.Size(380, 444);
             this.plNen.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // No1
             // 
             this.No1.BackColor = System.Drawing.Color.Transparent;
@@ -84,6 +102,26 @@
             this.No1.Location = new System.Drawing.Point(55, 62);
             this.No1.Name = "No1";
             this.No1.Size = new System.Drawing.Size(35, 35);
+=======
+            // pcbChienThang
+            // 
+            this.pcbChienThang.BackColor = System.Drawing.Color.Transparent;
+            this.pcbChienThang.Image = global::Project_Game.Properties.Resources.YoungDriver;
+            this.pcbChienThang.Location = new System.Drawing.Point(62, 170);
+            this.pcbChienThang.Name = "pcbChienThang";
+            this.pcbChienThang.Size = new System.Drawing.Size(250, 100);
+            this.pcbChienThang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbChienThang.TabIndex = 4;
+            this.pcbChienThang.TabStop = false;
+            // 
+            // No1
+            // 
+            this.No1.BackColor = System.Drawing.Color.Transparent;
+            this.No1.Image = global::Project_Game.Properties.Resources.rocket;
+            this.No1.Location = new System.Drawing.Point(59, 38);
+            this.No1.Name = "No1";
+            this.No1.Size = new System.Drawing.Size(30, 30);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.No1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.No1.TabIndex = 3;
             this.No1.TabStop = false;
@@ -91,10 +129,17 @@
             // Food1
             // 
             this.Food1.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.Food1.Image = global::Project_Game.Properties.Resources.trontim;
             this.Food1.Location = new System.Drawing.Point(130, 98);
             this.Food1.Name = "Food1";
             this.Food1.Size = new System.Drawing.Size(43, 38);
+=======
+            this.Food1.Image = global::Project_Game.Properties.Resources.smiling;
+            this.Food1.Location = new System.Drawing.Point(130, 98);
+            this.Food1.Name = "Food1";
+            this.Food1.Size = new System.Drawing.Size(50, 50);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.Food1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Food1.TabIndex = 3;
             this.Food1.TabStop = false;
@@ -102,10 +147,17 @@
             // No2
             // 
             this.No2.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.No2.Image = global::Project_Game.Properties.Resources.square__3_;
             this.No2.Location = new System.Drawing.Point(300, 101);
             this.No2.Name = "No2";
             this.No2.Size = new System.Drawing.Size(35, 35);
+=======
+            this.No2.Image = global::Project_Game.Properties.Resources.rocket;
+            this.No2.Location = new System.Drawing.Point(304, 98);
+            this.No2.Name = "No2";
+            this.No2.Size = new System.Drawing.Size(30, 30);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.No2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.No2.TabIndex = 3;
             this.No2.TabStop = false;
@@ -113,10 +165,17 @@
             // Food2
             // 
             this.Food2.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.Food2.Image = global::Project_Game.Properties.Resources.trontim;
             this.Food2.Location = new System.Drawing.Point(224, 62);
             this.Food2.Name = "Food2";
             this.Food2.Size = new System.Drawing.Size(43, 38);
+=======
+            this.Food2.Image = global::Project_Game.Properties.Resources.smiling;
+            this.Food2.Location = new System.Drawing.Point(224, 62);
+            this.Food2.Name = "Food2";
+            this.Food2.Size = new System.Drawing.Size(50, 50);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.Food2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Food2.TabIndex = 3;
             this.Food2.TabStop = false;
@@ -125,7 +184,11 @@
             // 
             this.pcbPlayer2.BackColor = System.Drawing.Color.Transparent;
             this.pcbPlayer2.Image = global::Project_Game.Properties.Resources.carYellow;
+<<<<<<< HEAD
             this.pcbPlayer2.Location = new System.Drawing.Point(295, 311);
+=======
+            this.pcbPlayer2.Location = new System.Drawing.Point(224, 308);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.pcbPlayer2.Name = "pcbPlayer2";
             this.pcbPlayer2.Size = new System.Drawing.Size(40, 70);
             this.pcbPlayer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,18 +234,30 @@
             this.plHuongDan.Controls.Add(this.lbHuongDan);
             this.plHuongDan.Location = new System.Drawing.Point(427, 184);
             this.plHuongDan.Name = "plHuongDan";
+<<<<<<< HEAD
             this.plHuongDan.Size = new System.Drawing.Size(285, 128);
+=======
+            this.plHuongDan.Size = new System.Drawing.Size(332, 157);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.plHuongDan.TabIndex = 11;
             // 
             // lbHuongDan
             // 
             this.lbHuongDan.AutoSize = true;
             this.lbHuongDan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lbHuongDan.Location = new System.Drawing.Point(3, 12);
             this.lbHuongDan.Name = "lbHuongDan";
             this.lbHuongDan.Size = new System.Drawing.Size(49, 19);
             this.lbHuongDan.TabIndex = 0;
             this.lbHuongDan.Text = "label2";
+=======
+            this.lbHuongDan.Location = new System.Drawing.Point(3, 10);
+            this.lbHuongDan.Name = "lbHuongDan";
+            this.lbHuongDan.Size = new System.Drawing.Size(309, 133);
+            this.lbHuongDan.TabIndex = 0;
+            this.lbHuongDan.Text = resources.GetString("lbHuongDan.Text");
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             // 
             // lbExit
             // 
@@ -191,13 +266,18 @@
             this.lbExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbExit.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.lbExit.Location = new System.Drawing.Point(546, 356);
+=======
+            this.lbExit.Location = new System.Drawing.Point(551, 387);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.lbExit.Name = "lbExit";
             this.lbExit.Size = new System.Drawing.Size(59, 24);
             this.lbExit.TabIndex = 10;
             this.lbExit.Text = "EXIT";
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
             // 
+<<<<<<< HEAD
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -207,12 +287,18 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+=======
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             // lbDiem
             // 
             this.lbDiem.AutoSize = true;
             this.lbDiem.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lbDiem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lbDiem.Location = new System.Drawing.Point(600, 322);
+=======
+            this.lbDiem.Location = new System.Drawing.Point(601, 354);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.lbDiem.Name = "lbDiem";
             this.lbDiem.Size = new System.Drawing.Size(32, 24);
             this.lbDiem.TabIndex = 7;
@@ -223,7 +309,11 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(525, 322);
+=======
+            this.label1.Location = new System.Drawing.Point(526, 354);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 24);
             this.label1.TabIndex = 8;
@@ -237,18 +327,45 @@
             // label2
             // 
             this.label2.AutoSize = true;
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(559, 411);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
+=======
+            this.label2.BackColor = System.Drawing.Color.Red;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(550, 420);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 25);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.label2.TabIndex = 1;
             this.label2.Text = "START";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+<<<<<<< HEAD
+=======
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(427, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(332, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             // _2Cars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 512);
+<<<<<<< HEAD
+=======
+            this.ControlBox = false;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.Controls.Add(this.label2);
             this.Controls.Add(this.plHuongDan);
             this.Controls.Add(this.lbExit);
@@ -257,10 +374,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.plNen);
             this.Name = "_2Cars";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_2Cars";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this._2Cars_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this._2Cars_KeyUp);
             this.plNen.ResumeLayout(false);
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pcbChienThang)).EndInit();
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             ((System.ComponentModel.ISupportInitialize)(this.No1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Food1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.No2)).EndInit();
@@ -296,5 +418,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer score;
         private System.Windows.Forms.Label label2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.PictureBox pcbChienThang;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
     }
 }

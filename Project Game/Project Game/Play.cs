@@ -15,8 +15,7 @@ namespace Project_Game
     {
         SoundPlayer p = new SoundPlayer(@"playgame.wav");
         SoundPlayer PlaySound = new SoundPlayer(@"hit.wav");
-        RacingGame r = new RacingGame();
-     //   Play l = new Play();
+       
 
         // biến toàn cục
         int TDXe = 6;
@@ -27,14 +26,6 @@ namespace Project_Game
         int Diem = 0;
         Random rd = new Random();
 
-       /* // Chọn xe để chơi
-        Bitmap im1 = Properties.Resources.ambulance;
-        Bitmap im2 = Properties.Resources.carGreen;
-        Bitmap im3 = Properties.Resources.carGrey;
-        Bitmap im4 = Properties.Resources.carOrange;
-        Bitmap im5 = Properties.Resources.carPink;
-        Bitmap im6 = Properties.Resources.CarRed;
-        Bitmap im7 = Properties.Resources.carYellow;*/
 
         public Play()
         {
@@ -45,20 +36,20 @@ namespace Project_Game
         private void Reset()
         {
             p.PlayLooping();
-            pcbChienThang.Visible = false; // ẩn bảng chiến thắng
-            btnStart.Enabled = false; // vô hiệu nút start khi xe chạy
-            pcbNo.Visible = false; // ẩn Hình Nổ
-            TocDoDC = 5; // lấy giá trị mặc định của TocDo=5.
-            TDDuong = 5; // lấy giá trị mặc định của TDDuong=5.
-            Diem = 0; // đặt Điểm lại 0
+            pcbChienThang.Visible = false;
+            btnStart.Enabled = false; 
+            pcbNo.Visible = false; 
+            TocDoDC = 5; 
+            TDDuong = 5; 
+            Diem = 0; 
 
-            pcbPlayer.Left = 161; // đặt lại vị trí đầu
-            pcbPlayer.Top = 286; // đặt lại vị trí đầu
+            pcbPlayer.Left = 161;
+            pcbPlayer.Top = 286; 
 
-            Trai = false; // đăt lại Trai là false
-            Phai = false; // đặt lại Phai là false
+            Trai = false;
+            Phai = false; 
 
-            // di chuyển xe về lại vị trí cũ 
+         
             pcbxe1.Left = 66;
             pcbxe1.Top = -120;
 
@@ -286,17 +277,17 @@ namespace Project_Game
 
             if (Diem < 1000)
             {
-                pcbChienThang.Image = Properties.Resources.bronze;
+                pcbChienThang.Image = Properties.Resources.YoungDriver;
             }
             // nếu score > 2000 --> A silver
             if (Diem > 1000)
             {
-                pcbChienThang.Image = Properties.Resources.silver;
+                pcbChienThang.Image = Properties.Resources.GhostDriver;
             }
             // nếu score > 3500 --> A golden
             if (Diem > 2000)
             {
-                pcbChienThang.Image = Properties.Resources.gold;
+                pcbChienThang.Image = Properties.Resources.KingOfRoad;
             }
 
             //PlaySound();
@@ -350,6 +341,7 @@ namespace Project_Game
 
         private void lbExit_Click(object sender, EventArgs e)
         {
+            RacingGame r = new RacingGame();
             DialogResult d = MessageBox.Show("Bạn thực sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (d == DialogResult.Yes)
             {
@@ -364,7 +356,8 @@ namespace Project_Game
         private void Play_Load(object sender, EventArgs e)
         {
            
-            lbHuongDan.Text = "Di chuyển xe của bạn tránh \n" +
+            lbHuongDan.Text = "Di chuyển xe của bạn " +
+                "bằng phím Left Right tránh \n" +
                 "những chiếc khác,xe chạy càng lâu điểm\n" +
                 "càng tăng cao tốc độ cũng tăng dần\n" +
                 "(nhấn phím space để thay đổi xe \n" +
@@ -380,13 +373,18 @@ namespace Project_Game
             }
         }
 
-
-       /* private void PlaySound()
+        private void lbHuongDan_Click(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
-            player.Play();
-        }*/
 
-        
+        }
+
+
+        /* private void PlaySound()
+         {
+             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
+             player.Play();
+         }*/
+
+
     }
 }

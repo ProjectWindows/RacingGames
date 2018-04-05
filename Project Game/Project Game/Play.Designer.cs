@@ -81,7 +81,11 @@
             this.pcbPlayer.Image = ((System.Drawing.Image)(resources.GetObject("pcbPlayer.Image")));
             this.pcbPlayer.Location = new System.Drawing.Point(161, 286);
             this.pcbPlayer.Name = "pcbPlayer";
+<<<<<<< HEAD
             this.pcbPlayer.Size = new System.Drawing.Size(49, 100);
+=======
+            this.pcbPlayer.Size = new System.Drawing.Size(40, 80);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.pcbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbPlayer.TabIndex = 3;
             this.pcbPlayer.TabStop = false;
@@ -90,9 +94,15 @@
             // 
             this.pcbNo.BackColor = System.Drawing.Color.Transparent;
             this.pcbNo.Image = ((System.Drawing.Image)(resources.GetObject("pcbNo.Image")));
+<<<<<<< HEAD
             this.pcbNo.Location = new System.Drawing.Point(153, 234);
             this.pcbNo.Name = "pcbNo";
             this.pcbNo.Size = new System.Drawing.Size(64, 64);
+=======
+            this.pcbNo.Location = new System.Drawing.Point(161, 230);
+            this.pcbNo.Name = "pcbNo";
+            this.pcbNo.Size = new System.Drawing.Size(50, 50);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.pcbNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNo.TabIndex = 3;
             this.pcbNo.TabStop = false;
@@ -100,7 +110,11 @@
             // pcbChienThang
             // 
             this.pcbChienThang.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.pcbChienThang.Image = ((System.Drawing.Image)(resources.GetObject("pcbChienThang.Image")));
+=======
+            this.pcbChienThang.Image = global::Project_Game.Properties.Resources.YoungDriver;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.pcbChienThang.Location = new System.Drawing.Point(66, 157);
             this.pcbChienThang.Name = "pcbChienThang";
             this.pcbChienThang.Size = new System.Drawing.Size(250, 100);
@@ -114,7 +128,11 @@
             this.pcbxe2.Image = ((System.Drawing.Image)(resources.GetObject("pcbxe2.Image")));
             this.pcbxe2.Location = new System.Drawing.Point(295, 103);
             this.pcbxe2.Name = "pcbxe2";
+<<<<<<< HEAD
             this.pcbxe2.Size = new System.Drawing.Size(49, 100);
+=======
+            this.pcbxe2.Size = new System.Drawing.Size(40, 80);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.pcbxe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbxe2.TabIndex = 3;
             this.pcbxe2.TabStop = false;
@@ -125,7 +143,11 @@
             this.pcbxe1.Image = ((System.Drawing.Image)(resources.GetObject("pcbxe1.Image")));
             this.pcbxe1.Location = new System.Drawing.Point(66, 19);
             this.pcbxe1.Name = "pcbxe1";
+<<<<<<< HEAD
             this.pcbxe1.Size = new System.Drawing.Size(49, 100);
+=======
+            this.pcbxe1.Size = new System.Drawing.Size(40, 80);
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.pcbxe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbxe1.TabIndex = 3;
             this.pcbxe1.TabStop = false;
@@ -213,7 +235,7 @@
             this.plHuongDan.Controls.Add(this.lbHuongDan);
             this.plHuongDan.Location = new System.Drawing.Point(402, 184);
             this.plHuongDan.Name = "plHuongDan";
-            this.plHuongDan.Size = new System.Drawing.Size(285, 128);
+            this.plHuongDan.Size = new System.Drawing.Size(313, 128);
             this.plHuongDan.TabIndex = 5;
             // 
             // lbHuongDan
@@ -225,6 +247,7 @@
             this.lbHuongDan.Size = new System.Drawing.Size(49, 19);
             this.lbHuongDan.TabIndex = 0;
             this.lbHuongDan.Text = "label2";
+            this.lbHuongDan.Click += new System.EventHandler(this.lbHuongDan_Click);
             // 
             // timer2
             // 
@@ -236,7 +259,8 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(402, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(285, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(313, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -244,8 +268,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(696, 474);
+=======
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(727, 450);
+            this.ControlBox = false;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             this.Controls.Add(this.plHuongDan);
             this.Controls.Add(this.lbExit);
             this.Controls.Add(this.pictureBox1);
@@ -255,6 +285,7 @@
             this.Controls.Add(this.plNen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Play";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Play_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Play_KeyDown);

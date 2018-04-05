@@ -157,5 +157,26 @@
   <ItemGroup>
     <None Include="Resources\trontim.png" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <None Include="Resources\smiling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket-ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GhostDriver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KingOfRoad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YoungDriver.jpg" />
+  </ItemGroup>
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,37 +7,65 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Project_Game
 {
     public partial class _2Cars : Form
     {
+<<<<<<< HEAD
         int TDXe = 6;
+=======
+        SoundPlayer Shut = new SoundPlayer(@"ShutDown.wav");
+        SoundPlayer playgame = new SoundPlayer(@"playgame.wav");
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
         int TDDuong = 5;
         bool Trai1;
         bool Phai1;
         bool Trai2;
         bool Phai2;
         int TocDoDC = 5;
+<<<<<<< HEAD
         int Diem = 0;
+=======
+        int Diem = 5;
+        int dem = 50;
+        int dem1 = 50;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
         Random rd = new Random();
         public _2Cars()
         {
             InitializeComponent();
             Reset();
+<<<<<<< HEAD
         }
         private void Reset()
         {
    
+=======
+            playgame.PlayLooping();
+        }
+        private void Reset()
+        {
+            playgame.PlayLooping();
+            this.pcbChienThang.Visible = false;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             TocDoDC = 5; // lấy giá trị mặc định của TocDo=5.
             TDDuong = 5; // lấy giá trị mặc định của TDDuong=5.
             Diem = 0; // đặt Điểm lại 0
             
             pcbPlayer1.Left = 130; // đặt lại vị trí đầu
+<<<<<<< HEAD
             pcbPlayer1.Top = 311; // đặt lại vị trí đầu
 
             pcbPlayer2.Left = 295; // đặt lại vị trí đầu
             pcbPlayer2.Top = 311;
+=======
+            pcbPlayer1.Top = 308; // đặt lại vị trí đầu
+
+            pcbPlayer2.Left = 224; // đặt lại vị trí đầu
+            pcbPlayer2.Top = 308;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
 
             Trai1 = false; 
             Phai1 = false; 
@@ -49,10 +77,17 @@ namespace Project_Game
             Food1.Top = 98;
             Food2.Left = 224;
             Food2.Top = 62;
+<<<<<<< HEAD
             No1.Left = 55;
             No1.Top = 62;
             No2.Left = 300;
             No2.Top = 101;
+=======
+            No1.Left = 59;
+            No1.Top = 38;
+            No2.Left = 300;
+            No2.Top = 129;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
 
 
             //đặt lại đường về vị trí đẩu
@@ -64,6 +99,7 @@ namespace Project_Game
             // start timer1
             score.Start();
         }
+<<<<<<< HEAD
         private void score_Tick(object sender, EventArgs e)
         {
            
@@ -74,6 +110,15 @@ namespace Project_Game
             
             Diem++; // tăng điểm khi di chuyển
             lbDiem.Text = "" + Diem; // hiển thị điểm
+=======
+        private void score_Tick_1(object sender, EventArgs e)
+        {
+            if (pcbPlayer1.Bounds.IntersectsWith(Food1.Bounds) || pcbPlayer2.Bounds.IntersectsWith(Food2.Bounds))
+            {
+                Diem++; // tăng điểm khi di chuyển
+                lbDiem.Text = "" + Diem; // hiển thị điểm
+            }
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
 
             //Di chuyển đường
             pcbDuong1.Top += TDDuong;
@@ -103,7 +148,11 @@ namespace Project_Game
             }
             if(Trai2)
             {
+<<<<<<< HEAD
                 pcbPlayer2.Left = 227; // di chuyển qua trái nếu Trai là true
+=======
+                pcbPlayer2.Left = 224; // di chuyển qua trái nếu Trai là true
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
                 //Trai2 = false;
             }
             if (Phai2)
@@ -129,7 +178,12 @@ namespace Project_Game
             }
             if (pcbPlayer1.Bounds.IntersectsWith(No1.Bounds) || pcbPlayer2.Bounds.IntersectsWith(No2.Bounds) || Food1.Bottom > plNen.Height || Food2.Bottom > plNen.Height)
             {
+<<<<<<< HEAD
                 GameOver(); // kết thúc game khi đụng phải xe 1 or xe 2
+=======
+                Shut.Play();
+                GameOver(); 
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
 
             }
             if(pcbPlayer1.Bounds.IntersectsWith(Food1.Bounds))
@@ -140,6 +194,83 @@ namespace Project_Game
             {
                 XuatHien2();
             }
+<<<<<<< HEAD
+=======
+            if (No1.Top > plNen.Height)
+            {
+                    XuatHien3();
+            }
+            if (No2.Top > plNen.Height)
+            {
+                    XuatHien4();
+            }
+            if(dem>=200 || dem1>=200)
+            {
+                dem = 50;
+                dem1 = 50;
+            }
+            if(Diem>10)
+            {
+                TDDuong = 8;
+            }
+            else
+            {
+                if (Diem > 20)
+                {
+                    TDDuong = 10;
+                }
+                else
+                {
+                    if(Diem>30)
+                    {
+                        TDDuong = 15;
+                    }
+                }
+            }
+        }
+        private void XuatHien4()
+        {
+            int num = rd.Next(1, 4);
+            switch (num)
+            {
+                case 1:
+                    No2.Image = Properties.Resources.rocket;
+                    No2.Left = 224;
+                    No2.Top = (rd.Next(300, 320) * -1)+dem;
+                    break;
+
+                case 2:
+                    No2.Image = Properties.Resources.rocket;
+                    No2.Left = 300;
+                    No2.Top = (rd.Next(280, 300) * -1)-dem;
+                    break;
+                default:
+                    break;
+            }
+            dem+=20;
+        }
+        private void XuatHien3()
+        {
+            int num = rd.Next(1, 4);
+            switch (num)
+            {
+                case 1:
+                    No1.Image = Properties.Resources.rocket;
+                    No1.Left = 55;
+                    No1.Top = (rd.Next(300, 320) * -1)-dem;
+                   
+                    break;
+
+                case 2:
+                    No1.Image = Properties.Resources.rocket;
+                    No1.Left = 130;
+                    No1.Top = (rd.Next(280, 300) * -1)+dem;
+                    break;
+                default:
+                    break;
+            }
+            dem-=20;  
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
         }
         private void XuatHien2()
         {
@@ -147,6 +278,7 @@ namespace Project_Game
             switch (num)
             {
                 case 1:
+<<<<<<< HEAD
                     Food2.Image = Properties.Resources.trontim;
                     Food2.Left = 224;
                     Food2.Top = rd.Next(150, 200) * -1;
@@ -156,10 +288,25 @@ namespace Project_Game
                     Food2.Image = Properties.Resources.trontim;
                     Food2.Left = 300;
                     Food2.Top = rd.Next(150, 200) * -1;
+=======
+                    Food2.Image = Properties.Resources.smiling;
+                    Food2.Left = 224;
+                    Food2.Top = (rd.Next(180, 200) * -1)-dem1;
+                    break;
+
+                case 2:
+                    Food2.Image = Properties.Resources.smiling;
+                    Food2.Left = 300;
+                    Food2.Top = (rd.Next(160, 180) *-1)+dem1;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
                     break;
                 default:
                     break;
             }
+<<<<<<< HEAD
+=======
+            dem1-= 20;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
         }
         private void  XuatHien1()
         {
@@ -167,6 +314,7 @@ namespace Project_Game
             switch (num)
             {
                 case 1:
+<<<<<<< HEAD
                     Food1.Image = Properties.Resources.trontim;
                     Food1.Left = 55;
                     Food1.Top = rd.Next(150, 200) * -1;
@@ -176,10 +324,25 @@ namespace Project_Game
                     Food1.Image = Properties.Resources.trontim;
                     Food1.Left = 130;
                     Food1.Top = rd.Next(150, 200) * -1;
+=======
+                    Food1.Image = Properties.Resources.smiling;
+                    Food1.Left = 55;
+                    Food1.Top =( rd.Next(180,200) * -1)-dem1;
+                    break;
+
+                case 2:
+                    Food1.Image = Properties.Resources.smiling;
+                    Food1.Left = 130;
+                    Food1.Top = (rd.Next(160, 180) * -1)+dem1;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
                     break;
                 default:
                     break;
             }
+<<<<<<< HEAD
+=======
+            dem1 += 20;
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
         }
         private void _2Cars_KeyDown(object sender, KeyEventArgs e)
         {
@@ -198,7 +361,11 @@ namespace Project_Game
                 Trai2 = true;
             }
           
+<<<<<<< HEAD
             if (e.KeyCode == Keys.Right && pcbPlayer2.Left == 227)
+=======
+            if (e.KeyCode == Keys.Right && pcbPlayer2.Left == 224)
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
             {
                 Phai2 = true;
             }
@@ -206,7 +373,19 @@ namespace Project_Game
 
         private void lbExit_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Application.Exit();
+=======
+            RacingGame r = new RacingGame();
+            DialogResult d = MessageBox.Show("Bạn thực sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+            {
+                this.Close();
+                playgame.Stop();
+                score.Stop();
+                r.Show();
+            }
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
         }
 
         private void _2Cars_KeyUp(object sender, KeyEventArgs e)
@@ -232,7 +411,24 @@ namespace Project_Game
         private void GameOver()
         {
             score.Stop();
+<<<<<<< HEAD
 
+=======
+            pcbChienThang.Visible = true;
+            if (Diem >=10)
+            {
+                pcbChienThang.Image = Properties.Resources.YoungDriver;
+            }
+            if (Diem  >= 20)
+            {
+                pcbChienThang.Image = Properties.Resources.GhostDriver;
+            }
+            if (Diem >=30)
+            {
+                pcbChienThang.Image = Properties.Resources.KingOfRoad;
+            }
+           
+>>>>>>> 3ff6edcb48acf796255f918d9532c7f27d31ee2e
         }
 
         private void label2_Click(object sender, EventArgs e)
