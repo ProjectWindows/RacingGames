@@ -67,3 +67,16 @@ E:\Github\GameFull\Project Game\obj\Debug\Project_Game.Play.resources
 E:\Github\GameFull\Project Game\obj\Debug\Project_Game.Properties.Resources.resources
 E:\Github\GameFull\Project Game\obj\Debug\Project_Game.RacingGame.resources
 E:\Github\GameFull\Project Game\obj\Debug\Project Game.csproj.GenerateResource.Cache
+D:\NỘP BÀI\GameFull\Project Game\bin\Debug\Project Game.exe.config
+D:\NỘP BÀI\GameFull\Project Game\bin\Debug\Project Game.exe
+D:\NỘP BÀI\GameFull\Project Game\bin\Debug\Project Game.pdb
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project Game.csprojResolveAssemblyReference.cache
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project_Game._2Cars.resources
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project_Game.Huongdan2.resources
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project_Game.Play.resources
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project_Game.Properties.Resources.resources
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project_Game.RacingGame.resources
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project Game.csproj.GenerateResource.cache
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project Game.csproj.CoreCompileInputs.cache
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project Game.exe
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project Game.pdb

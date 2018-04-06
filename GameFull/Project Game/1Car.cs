@@ -30,7 +30,7 @@ namespace Project_Game
         public Play()
         {
             InitializeComponent();
-            Reset();
+            p.Play();
            
         }
         private void Reset()
@@ -298,7 +298,7 @@ namespace Project_Game
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Reset(); // reset lại tất cả khi nhấn nút start
+            Reset(); 
         }
 
        
@@ -349,43 +349,21 @@ namespace Project_Game
             {
                 this.Close();               
                 timer1.Stop();
-                timer2.Stop();
                 r.Show();
             }
         }
 
         private void Play_Load(object sender, EventArgs e)
         {
-           
-            //lbHuongDan.Text = "Di chuyển xe của bạn " +
-            //    "bằng phím Left Right tránh \n" +
-            //    "những chiếc khác,xe chạy càng lâu điểm\n" +
-            //    "càng tăng cao tốc độ cũng tăng dần\n" +
-            //    "(nhấn phím space để thay đổi xe \n" +
-            //    "đang chạy)";
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-        //    lbHuongDan.Location = new Point(lbHuongDan.Location.X, lbHuongDan.Location.Y - 1);
-        //    if(lbHuongDan.Location.Y+lbHuongDan.Height<0)
-        //    {
-        //        lbHuongDan.Location = new Point(lbHuongDan.Location.X, lbHuongDan.Height);
-        //    }
-        }
+       
 
         private void lbHuongDan_Click(object sender, EventArgs e)
         {
 
         }
 
-
-        /* private void PlaySound()
-         {
-             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
-             player.Play();
-         }*/
-
-
+       
     }
 }

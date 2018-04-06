@@ -45,7 +45,7 @@
             this.lbDiem = new System.Windows.Forms.Label();
             this.lbExit = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbIntro = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.plNen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbChienThang)).BeginInit();
@@ -87,6 +87,7 @@
             this.pcbChienThang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbChienThang.TabIndex = 4;
             this.pcbChienThang.TabStop = false;
+            this.pcbChienThang.Visible = false;
             // 
             // No1
             // 
@@ -206,14 +207,18 @@
             // lbExit
             // 
             this.lbExit.BackColor = System.Drawing.Color.Transparent;
+            this.lbExit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbExit.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbExit.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbExit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.ForeColor = System.Drawing.Color.White;
             this.lbExit.Image = global::Project_Game.Properties.Resources.exit;
             this.lbExit.Location = new System.Drawing.Point(603, 376);
             this.lbExit.Name = "lbExit";
             this.lbExit.Size = new System.Drawing.Size(61, 48);
             this.lbExit.TabIndex = 14;
+            this.lbExit.Text = "EXIT";
+            this.lbExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click_1);
             // 
             // label5
@@ -227,33 +232,37 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "TWO CARS";
             // 
-            // label4
+            // lbIntro
             // 
-            this.label4.BackColor = System.Drawing.Color.DimGray;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label4.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.RosyBrown;
-            this.label4.Image = global::Project_Game.Properties.Resources.open_book;
-            this.label4.Location = new System.Drawing.Point(428, 229);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(209, 54);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Introduction";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lbIntro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbIntro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbIntro.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIntro.ForeColor = System.Drawing.Color.White;
+            this.lbIntro.Image = global::Project_Game.Properties.Resources.open_book;
+            this.lbIntro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbIntro.Location = new System.Drawing.Point(428, 184);
+            this.lbIntro.Name = "lbIntro";
+            this.lbIntro.Size = new System.Drawing.Size(188, 68);
+            this.lbIntro.TabIndex = 19;
+            this.lbIntro.Text = "Intro";
+            this.lbIntro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbIntro.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnStart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.DimGray;
+            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.RosyBrown;
+            this.btnStart.ForeColor = System.Drawing.Color.White;
             this.btnStart.Image = global::Project_Game.Properties.Resources.car;
-            this.btnStart.Location = new System.Drawing.Point(428, 304);
+            this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart.Location = new System.Drawing.Point(428, 291);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(209, 53);
+            this.btnStart.Size = new System.Drawing.Size(188, 69);
             this.btnStart.TabIndex = 18;
             this.btnStart.Text = "START";
+            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -262,19 +271,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project_Game.Properties.Resources._2carnen;
-            this.ClientSize = new System.Drawing.Size(695, 460);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(712, 460);
             this.ControlBox = false;
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbIntro);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbDiem);
             this.Controls.Add(this.plNen);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "_2Cars";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this._2Cars_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this._2Cars_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this._2Cars_KeyUp);
             this.plNen.ResumeLayout(false);
@@ -309,7 +320,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbDiem;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbIntro;
         private System.Windows.Forms.Button btnStart;
     }
 }

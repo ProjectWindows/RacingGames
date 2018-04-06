@@ -42,7 +42,6 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.lbDiem = new System.Windows.Forms.Label();
             this.lbExit = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -93,6 +92,7 @@
             this.pcbNo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNo.TabIndex = 3;
             this.pcbNo.TabStop = false;
+            this.pcbNo.Visible = false;
             // 
             // pcbChienThang
             // 
@@ -104,6 +104,7 @@
             this.pcbChienThang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbChienThang.TabIndex = 3;
             this.pcbChienThang.TabStop = false;
+            this.pcbChienThang.Visible = false;
             // 
             // pcbxe2
             // 
@@ -149,21 +150,24 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.DimGray;
+            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.RosyBrown;
+            this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnStart.Image = global::Project_Game.Properties.Resources.car;
-            this.btnStart.Location = new System.Drawing.Point(434, 300);
+            this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart.Location = new System.Drawing.Point(488, 263);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(209, 53);
+            this.btnStart.Size = new System.Drawing.Size(186, 74);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "START";
+            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -171,51 +175,50 @@
             // 
             this.lbDiem.AutoSize = true;
             this.lbDiem.BackColor = System.Drawing.Color.Transparent;
-            this.lbDiem.Font = new System.Drawing.Font("Showcard Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiem.ForeColor = System.Drawing.Color.Tomato;
+            this.lbDiem.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbDiem.Location = new System.Drawing.Point(563, 110);
             this.lbDiem.Name = "lbDiem";
-            this.lbDiem.Size = new System.Drawing.Size(64, 44);
+            this.lbDiem.Size = new System.Drawing.Size(60, 47);
             this.lbDiem.TabIndex = 2;
             this.lbDiem.Text = "00";
             // 
             // lbExit
             // 
             this.lbExit.BackColor = System.Drawing.Color.Transparent;
-            this.lbExit.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbExit.ForeColor = System.Drawing.Color.White;
+            this.lbExit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbExit.Image = global::Project_Game.Properties.Resources.exit;
-            this.lbExit.Location = new System.Drawing.Point(625, 377);
+            this.lbExit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbExit.Location = new System.Drawing.Point(600, 365);
             this.lbExit.Name = "lbExit";
-            this.lbExit.Size = new System.Drawing.Size(99, 64);
+            this.lbExit.Size = new System.Drawing.Size(120, 76);
             this.lbExit.TabIndex = 4;
+            this.lbExit.Text = "EXIT";
+            this.lbExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
-            // 
-            // timer2
-            // 
-            this.timer2.Enabled = true;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.DimGray;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.RosyBrown;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label2.Image = global::Project_Game.Properties.Resources.open_book;
-            this.label2.Location = new System.Drawing.Point(434, 225);
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(488, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 54);
+            this.label2.Size = new System.Drawing.Size(186, 63);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Introduction";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Text = "Intro";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Tomato;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(427, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 37);
@@ -227,7 +230,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Ravie", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label5.Location = new System.Drawing.Point(402, 27);
+            this.label5.Location = new System.Drawing.Point(411, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(292, 83);
             this.label5.TabIndex = 18;
@@ -239,7 +242,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::Project_Game.Properties.Resources.nen1c;
-            this.ClientSize = new System.Drawing.Size(709, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(732, 450);
             this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
@@ -283,7 +287,6 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lbDiem;
         private System.Windows.Forms.Label lbExit;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
