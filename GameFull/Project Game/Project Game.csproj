@@ -229,5 +229,20 @@
   <ItemGroup>
     <None Include="Resources\nen1c.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkered-flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkered-flag %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-flags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-and-White-Chequered-Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-book.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

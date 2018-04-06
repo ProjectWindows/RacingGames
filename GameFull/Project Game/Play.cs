@@ -37,6 +37,7 @@ namespace Project_Game
         {
             p.PlayLooping();
             pcbChienThang.Visible = false;
+            label2.Enabled = false;
             btnStart.Enabled = false; 
             pcbNo.Visible = false; 
             TocDoDC = 5; 
@@ -265,6 +266,7 @@ namespace Project_Game
             pcbChienThang.Visible = true; // hiển thị  bảng chiến thắng
             timer1.Stop(); // dừng timer
             btnStart.Enabled = true; // bật button lúc sử dụng
+            label2.Enabled = true;
 
             // hiển thị Nổ ở phía trên xe Player
             pcbNo.Visible = true; // hiển thị Hình Ảnh Nổ

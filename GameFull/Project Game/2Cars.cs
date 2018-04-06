@@ -31,6 +31,8 @@ namespace Project_Game
         }
         private void Reset()
         {
+            label4.Enabled = false;
+            btnStart.Enabled = false;
             playgame.PlayLooping();
             this.pcbChienThang.Visible = false;
             TocDoDC = 5; // lấy giá trị mặc định của TocDo=5.
@@ -121,8 +123,8 @@ namespace Project_Game
             if (pcbPlayer1.Bounds.IntersectsWith(No1.Bounds) || pcbPlayer2.Bounds.IntersectsWith(No2.Bounds) || Food1.Bottom > plNen.Height || Food2.Bottom > plNen.Height)
             {
                 Shut.Play();
-                GameOver(); 
-
+                GameOver();
+                
             }
             if(pcbPlayer1.Bounds.IntersectsWith(Food1.Bounds) )
             {
@@ -324,6 +326,9 @@ namespace Project_Game
         private void GameOver()
         {
             score.Stop();
+            btnStart.Enabled = true;
+            label4.Enabled = true;
+
             pcbChienThang.Visible = true;
             if (Diem >=10)
             {
@@ -347,11 +352,7 @@ namespace Project_Game
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            Huongdan2 hd2 = new Huongdan2();
-            hd2.Show();
-        }
+        
 
         private void lbExit_Click_1(object sender, EventArgs e)
         {
@@ -365,9 +366,15 @@ namespace Project_Game
             }
         }
 
-        private void label2_Click_1(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
             Reset();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Huongdan2 hd2 = new Huongdan2();
+            hd2.Show();
         }
     }
 }

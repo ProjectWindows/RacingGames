@@ -156,12 +156,12 @@
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.DimGray;
-            this.btnStart.Font = new System.Drawing.Font("Viner Hand ITC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btnStart.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.RosyBrown;
             this.btnStart.Image = global::Project_Game.Properties.Resources.car;
             this.btnStart.Location = new System.Drawing.Point(434, 300);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(143, 53);
+            this.btnStart.Size = new System.Drawing.Size(209, 53);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "START";
             this.btnStart.UseVisualStyleBackColor = false;
@@ -198,12 +198,18 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Image = global::Project_Game.Properties.Resources.guide__1_;
-            this.label2.Location = new System.Drawing.Point(457, 204);
+            this.label2.BackColor = System.Drawing.Color.DimGray;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label2.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.RosyBrown;
+            this.label2.Image = global::Project_Game.Properties.Resources.open_book;
+            this.label2.Location = new System.Drawing.Point(434, 225);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 67);
+            this.label2.Size = new System.Drawing.Size(209, 54);
             this.label2.TabIndex = 5;
+            this.label2.Text = "Introduction";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
