@@ -16,7 +16,8 @@ namespace Project_Game
     {
         // địa chỉ nhạc
         SoundPlayer Shut = new SoundPlayer(@"ShutDown.wav");
-        SoundPlayer playgame = new SoundPlayer(@"playgame.wav");
+        SoundPlayer playgame = new SoundPlayer(@"nhac2cars.wav");
+
         // biến toàn cục
         int TDDuong = 5;
         bool Trai1;
@@ -141,23 +142,19 @@ namespace Project_Game
             }
 
 
-            if (Diem > 10)
+            if (Diem > 20 && Diem <=50)
             {
-                TDDuong = 10;
+                TDDuong = 6;
+                TocDoDC = 6;
             }
             else
             {
-                if (Diem > 20)
-                {
-                    TDDuong = 15;
-                }
-                else
-                {
-                    if (Diem > 30)
-                    {
-                        TDDuong = 20;
-                    }
-                }
+               if (Diem > 50)
+               {
+                    TDDuong = 8;
+                    TocDoDC = 7;
+               }
+                
             }
         }
         private void XuatHien4()

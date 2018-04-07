@@ -53,10 +53,10 @@
             // 
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Brush Script MT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Red;
+            this.btnExit.ForeColor = System.Drawing.Color.Transparent;
             this.btnExit.Image = global::Project_Game.Properties.Resources.exit;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(302, 330);
+            this.btnExit.Location = new System.Drawing.Point(349, 345);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(77, 48);
             this.btnExit.TabIndex = 12;
@@ -79,9 +79,10 @@
             this.lbHuongDan.AutoSize = true;
             this.lbHuongDan.BackColor = System.Drawing.Color.Transparent;
             this.lbHuongDan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHuongDan.Location = new System.Drawing.Point(84, 161);
+            this.lbHuongDan.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbHuongDan.Location = new System.Drawing.Point(61, 167);
             this.lbHuongDan.Name = "lbHuongDan";
-            this.lbHuongDan.Size = new System.Drawing.Size(309, 133);
+            this.lbHuongDan.Size = new System.Drawing.Size(344, 133);
             this.lbHuongDan.TabIndex = 0;
             this.lbHuongDan.Text = resources.GetString("lbHuongDan.Text");
             // 

@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lbHuongDan.Text" xml:space="preserve">
-    <value>Di chuyển xe 1 : phím A (trái) và D (phải)
-Di chuyển xe 2: phím Left và Right
+    <value>Di chuyển xe 1 : phím A (qua trái) và D (qua phải)
+Di chuyển xe 2 : phím ← (qua trái) và →(qua phải)
 Ăn icon mặt cười sẽ tăng điểm và hãy
 tránh xa những tên lửa .
 Xử thua: trò chơi kết thúc nếu xe của bạn 
