@@ -133,7 +133,7 @@ namespace Project_Game
             {
                 XuatHien2();
                 Diem++;
-                this.lbDiem.Text = Diem.ToString();  
+                this.lbDiem.Text = Diem.ToString();
             }
           
             if (No2.Top > plNen.Height)

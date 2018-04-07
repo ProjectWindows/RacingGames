@@ -42,7 +42,7 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.lbDiem = new System.Windows.Forms.Label();
             this.lbExit = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbHuongdan = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.plNen.SuspendLayout();
@@ -176,7 +176,7 @@
             this.lbDiem.AutoSize = true;
             this.lbDiem.BackColor = System.Drawing.Color.Transparent;
             this.lbDiem.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbDiem.ForeColor = System.Drawing.Color.Red;
             this.lbDiem.Location = new System.Drawing.Point(563, 110);
             this.lbDiem.Name = "lbDiem";
             this.lbDiem.Size = new System.Drawing.Size(60, 47);
@@ -198,27 +198,28 @@
             this.lbExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
             // 
-            // label2
+            // lbHuongdan
             // 
-            this.label2.BackColor = System.Drawing.Color.DimGray;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label2.Image = global::Project_Game.Properties.Resources.open_book;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(488, 171);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 63);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Intro";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbHuongdan.BackColor = System.Drawing.Color.DimGray;
+            this.lbHuongdan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbHuongdan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbHuongdan.Font = new System.Drawing.Font("Ravie", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHuongdan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbHuongdan.Image = global::Project_Game.Properties.Resources.open_book;
+            this.lbHuongdan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbHuongdan.Location = new System.Drawing.Point(488, 171);
+            this.lbHuongdan.Name = "lbHuongdan";
+            this.lbHuongdan.Size = new System.Drawing.Size(186, 63);
+            this.lbHuongdan.TabIndex = 5;
+            this.lbHuongdan.Text = "Intro";
+            this.lbHuongdan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbHuongdan.Click += new System.EventHandler(this.lbHuongdan_Click_1);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(427, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 37);
@@ -234,7 +235,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(292, 83);
             this.label5.TabIndex = 18;
-            this.label5.Text = "ONE CARS";
+            this.label5.Text = "ONE CAR";
             // 
             // Play
             // 
@@ -247,16 +248,18 @@
             this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbHuongdan);
             this.Controls.Add(this.lbExit);
             this.Controls.Add(this.lbDiem);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.plNen);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Play";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Play_Load);
+            this.Text = ".";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Play_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Play_KeyUp);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Play_PreviewKeyDown);
@@ -287,7 +290,7 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lbDiem;
         private System.Windows.Forms.Label lbExit;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbHuongdan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
     }

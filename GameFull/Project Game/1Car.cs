@@ -37,7 +37,7 @@ namespace Project_Game
         {
             p.PlayLooping();
             pcbChienThang.Visible = false;
-            label2.Enabled = false;
+            lbHuongdan.Enabled = false;
             btnStart.Enabled = false; 
             pcbNo.Visible = false; 
             TocDoDC = 5; 
@@ -139,41 +139,43 @@ namespace Project_Game
                 GameOver(); // kết thúc game khi đụng phải xe 1 or xe 2
 
             }
-            // tăng tốc dường băng
-            //nếu điểm trên 100 và bé hơn 500
+         
             if (Diem > 100 && Diem < 500)
             {
                 TocDoDC = 6;
                 TDDuong = 7;
             }
-            // nếu điểm trên 500 và bé hơn 1000
-            else
+            if (Diem > 500 && Diem < 1000)
             {
-                if (Diem > 500 && Diem < 1000)
-                {
-                    TocDoDC = 7;
-                    TDDuong = 8;
-                }
-                // nếu điểm bé hơn 1200
-                else
-                {
-                    if (Diem > 1200)
-                    {
-                        TocDoDC = 9;
-                        TDDuong = 10;
-                    }
-                }
+                TocDoDC = 8;
+                TDDuong = 8;
+            }     
+            if (Diem > 1500)
+            {
+                TocDoDC = 10;
+                TDDuong = 9;
             }
+            if (Diem > 2000)
+            {
+                TocDoDC = 12;
+                TDDuong = 10;
+            }
+            if (Diem > 3000)
+            {
+                TocDoDC = 15;
+                TDDuong = 12;
+            }
+
         }
 
         private void Play_KeyDown(object sender, KeyEventArgs e)
         {
-            // xe qua trái thì Trai là true
+         
             if (e.KeyCode == Keys.Left && pcbPlayer.Left > 0)
             {
                 Trai = true;
             }
-           // xe qua phải thì Phai là true
+           
             if (e.KeyCode == Keys.Right && pcbPlayer.Left + pcbPlayer.Width < plNen.Width)
             {
                 Phai = true;
@@ -266,7 +268,7 @@ namespace Project_Game
             pcbChienThang.Visible = true; // hiển thị  bảng chiến thắng
             timer1.Stop(); // dừng timer
             btnStart.Enabled = true; // bật button lúc sử dụng
-            label2.Enabled = true;
+            lbHuongdan.Enabled = true;
 
             // hiển thị Nổ ở phía trên xe Player
             pcbNo.Visible = true; // hiển thị Hình Ảnh Nổ
@@ -275,18 +277,18 @@ namespace Project_Game
             pcbNo.BackColor = Color.Transparent; // đổi màu 
             pcbNo.BringToFront(); // đem ra trước xe player
 
-            // nếu score bé hơn 1000 thì --> A bronze
+       
 
             if (Diem < 1000)
             {
                 pcbChienThang.Image = Properties.Resources.YoungDriver;
             }
-            // nếu score > 2000 --> A silver
+          
             if (Diem > 1000)
             {
                 pcbChienThang.Image = Properties.Resources.GhostDriver;
             }
-            // nếu score > 3500 --> A golden
+      
             if (Diem > 2000)
             {
                 pcbChienThang.Image = Properties.Resources.KingOfRoad;
@@ -353,17 +355,10 @@ namespace Project_Game
             }
         }
 
-        private void Play_Load(object sender, EventArgs e)
+        private void lbHuongdan_Click_1(object sender, EventArgs e)
         {
+            HuongDan1 hd = new HuongDan1();
+            hd.ShowDialog();
         }
-
-       
-
-        private void lbHuongDan_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }

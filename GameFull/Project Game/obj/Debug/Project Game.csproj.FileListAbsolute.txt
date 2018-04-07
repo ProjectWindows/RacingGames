@@ -92,3 +92,4 @@ E:\Github\RacingGames\GameFull\Project Game\obj\Debug\Project_Game.Play.resource
 E:\Github\RacingGames\GameFull\Project Game\obj\Debug\Project_Game.Properties.Resources.resources
 E:\Github\RacingGames\GameFull\Project Game\obj\Debug\Project_Game.RacingGame.resources
 E:\Github\RacingGames\GameFull\Project Game\obj\Debug\Project Game.csproj.GenerateResource.Cache
+D:\NỘP BÀI\GameFull\Project Game\obj\Debug\Project_Game.HuongDan1.resources

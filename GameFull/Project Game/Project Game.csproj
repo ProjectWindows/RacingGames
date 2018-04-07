@@ -80,6 +80,9 @@
     <EmbeddedResource Include="2Cars.resx">
       <DependentUpon>2Cars.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HuongDan1.resx">
+      <DependentUpon>HuongDan1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Huongdan2.resx">
       <DependentUpon>Huongdan2.cs</DependentUpon>
     </EmbeddedResource>

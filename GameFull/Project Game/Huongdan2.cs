@@ -16,6 +16,7 @@ namespace Project_Game
         public Huongdan2()
         {
             InitializeComponent();
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -109,7 +109,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "RacingGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RacingGame";
+            this.Text = ".";
             this.Load += new System.EventHandler(this.RacingGame_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
