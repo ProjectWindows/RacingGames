@@ -1,0 +1,10 @@
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\bin\Debug\DemoDaluong.exe.config
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\bin\Debug\DemoDaluong.exe
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\bin\Debug\DemoDaluong.pdb
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\obj\Debug\DemoDaluong.csprojResolveAssemblyReference.cache
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\obj\Debug\DemoDaluong.Form1.resources
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\obj\Debug\DemoDaluong.Properties.Resources.resources
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\obj\Debug\DemoDaluong.csproj.GenerateResource.cache
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\obj\Debug\DemoDaluong.csproj.CoreCompileInputs.cache
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\obj\Debug\DemoDaluong.exe
+D:\UTE-IT\Operating system\DemoDaluong\DemoDaluong\obj\Debug\DemoDaluong.pdb

@@ -1,0 +1,8 @@
+D:\GoogleDriver\HDH\thread\thread\bin\Debug\thread.exe.config
+C:\Users\LuPhuong\Desktop\thread\bin\Debug\thread.exe.config
+C:\Users\LuPhuong\Desktop\thread\bin\Debug\thread.exe
+C:\Users\LuPhuong\Desktop\thread\bin\Debug\thread.pdb
+C:\Users\LuPhuong\Desktop\thread\obj\Debug\thread.csprojResolveAssemblyReference.cache
+C:\Users\LuPhuong\Desktop\thread\obj\Debug\thread.csproj.CoreCompileInputs.cache
+C:\Users\LuPhuong\Desktop\thread\obj\Debug\thread.exe
+C:\Users\LuPhuong\Desktop\thread\obj\Debug\thread.pdb
