@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        .dropbtn {
+            background-color: yellowgreen;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 16px 18px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #hv {
+            display: none;
+        }
+
+        #hcn {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Tùy Chọn</button>
+        <div class="dropdown-content">
+            <a onclick="HinhVuong()">Hình Vuông</a>
+            <a onclick="HinhChuNhat()">Hình Chữ Nhật</a>
+        </div>
+    </div>
+
+
+    <div id="hv">
+        <p>Độ Dài Cạnh:</p>
+        <input id="demo" type="text"><br></br>
+        <button onclick="myFunction()">Diện tích</button>
+        <button onclick="myFunction1()">Chu vi</button>
+    </div>
+    <div id="hcn">
+        <p>Chiều dài</p>
+        <input id="demo1" type="text">
+        <p>Chiều rộng</p>
+        <input id="demo2" type="text">
+        <br> </br>
+        <button onclick="myFunction2()">Diện tích</button>
+        <button onclick="myFunction3()">Chu vi</button>
+    </div>
+    <script>
+        function HinhVuong() {
+            document.getElementById('hv').style.display = 'block';
+            document.getElementById('hcn').style.display = 'none';
+        }
+        function HinhChuNhat() {
+            document.getElementById('hv').style.display = 'none';
+            document.getElementById('hcn').style.display = 'block';
+        }
+        function myFunction() {
+            var x = document.getElementById("demo").value;
+            if (isNaN(x)) {
+                alert("Invalid Number");
+            }
+            else {
+                alert(x * x);
+            }
+        }
+        function myFunction1() {
+            var x = document.getElementById("demo").value;
+            if (isNaN(x)) {
+                alert("Invalid Number");
+            }
+            else {
+                alert(x * 4);
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("demo1").value;
+            var y = document.getElementById("demo2").value;
+            if (isNaN(x) || isNaN(y)) {
+                alert("Invalid Number");
+            }
+            else {
+                alert(x * y);
+            }
+        }
+        function myFunction3() {
+            var x = document.getElementById("demo1").value;
+            var y = document.getElementById("demo2").value;
+            if (isNaN(x) || isNaN(y)) {
+                alert("Invalid Number");
+            }
+            else {
+                alert(x * 2 + y * 2);
+            }
+        }
+    </script>
+</body>
+</html>

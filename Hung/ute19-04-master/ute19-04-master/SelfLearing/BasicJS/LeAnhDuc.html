@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+
+</head>
+<body>
+<div class="dropdown">
+   	 	<button class="dropbtn">Dropdown</button>
+    		<div class="dropdown-content">
+  				<a  onclick="Check1()">Hình Vuông</a>
+                <a  onclick="Check2()">Hình Chữ Nhật</a>
+  			</div>
+	</div>
+
+
+<div id="hv">
+<p>Độ Dài Cạnh:</p>
+<input id="demo" size="10" type="text" required><br></br>
+<button onclick="myFunction()">Diện tích</button>
+<button onclick="myFunction1()">Chu vi</button>
+<button onclick="Clear()">Reset</button>
+</div>
+<div id="hcn">
+<p>Chiều dài</p>
+<input id="demo1" size="10" type="text" required>
+<p>Chiều rộng</p>
+<input id="demo2" size="10" type="text" required>
+<br> </br>
+<button onclick="myFunction2()">Diện tích</button>
+<button onclick="myFunction3()">Chu vi</button>
+<button onclick="Clear1()">Reset</button>
+</div>
+<script>
+function Check1(){
+document.getElementById('hv').style.display='block';
+document.getElementById('hcn').style.display='none';
+}
+function Check2(){
+document.getElementById('hv').style.display='none';
+document.getElementById('hcn').style.display='block';
+}
+function myFunction() {
+var x = document.getElementById("demo").value;
+if(isNaN(x)){
+alert("Vui lòng nhập lại!");
+}
+else{
+  alert(x*x);
+  }
+}
+function myFunction1() {
+var x = document.getElementById("demo").value;
+if(isNaN(x)){
+alert("Vui lòng nhập lại!");
+}
+else{
+  alert(x*4);
+  }
+}
+function Clear() {
+ document.getElementById("demo").value = "";
+}
+function myFunction2() {
+var x = document.getElementById("demo1").value;
+var y = document.getElementById("demo2").value;
+if(isNaN(x)|| isNaN(y))
+{
+alert("1 trong 2 không phải số");
+}
+else{
+  alert(x*y);
+  }
+}
+function myFunction3() {
+var x = document.getElementById("demo1").value;
+var y = document.getElementById("demo2").value;
+if(isNaN(x)|| isNaN(y))
+{
+alert("Vui lòng nhập lại!");
+}
+else{
+  alert(parseFloat(x)*2+parseFloat(y)*2);
+  }
+}
+function Clear1() {
+    document.getElementById("demo1").value = "";
+    document.getElementById("demo2").value = "";
+}
+</script>
+
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+ul{
+  list-style:none;
+}
+#hv{
+display:none;
+width: 600px;
+position:absolute;
+right:350px;
+top:200px;
+}
+#hcn{
+display:none;
+width: 600px;
+position:absolute;
+right:350px;
+top:200px;
+}
+</style>
+</body>
+</html>
